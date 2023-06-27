@@ -3,8 +3,9 @@ menu:
 - {name: 'Publications', url: '/publications'}
 - {name: 'Teaching', url: '/teaching'}
 - {name: 'CV', url: '/cv'}
+- {name: 'MyLab', url: '/MyLab'}
 - {name: 'Contact', url: '/contact'}
-- {name: 'My Lab', url: '/My Lab'}
+
 
 social:
 - {icon: 'fab fa-linkedin fa-3x', link: 'https://www.linkedin.com/in/babulcseian/'}
