@@ -174,6 +174,21 @@
           <a class="presentation" href="{{ item.videos }}">[video]</a>        
           {% endif %}
         </p>
+    <br>
+    <h4>B.Sc.Thesis and Project</h4>
+      {% for item in site.data.publications.thesis %}
+        <p><em>{{ item.title }}</em>, {{ item.description }} 
+          <br><!--<a class="paper" href="{{ item.paper }}">[pdf]</a>-->
+          {% if item.paper != null %}
+            <a class="pdf" href="{{ item.paper }}">[pdf]</a>        
+          {% endif %}
+          {% if item.slides != null %}
+          <a class="presentation" href="{{ item.slides }}">[slides]</a>        
+          {% endif %}
+          {% if item.videos != null %}
+          <a class="presentation" href="{{ item.videos }}">[video]</a>        
+          {% endif %}
+        </p>
       {% endfor %}
   </div>
 </div>
