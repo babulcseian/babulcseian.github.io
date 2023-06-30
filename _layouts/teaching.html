@@ -8,13 +8,13 @@ layout: default
   <div>
     <h3 class="fw-bold border-bottom pb-3 mb-5">Teaching</h3>
     <h3 class="fw-bold border-bottom pb-3 mb-5">MyLab</h3>
-    <h4>Micro Institute of Technology-(2018/19)</h4>
+    <h6>Micro Institute of Technology-(2018/19)</h6>
     {% for item in site.data.teaching_data %}
       {% if item.place == "carlos" and item.year == "2018-2019" %}  
         <p>{{ item.name }}. {{ item.degree }}.</p>
       {% endif %}
     {% endfor %}
-    <h4>San Aibin Artificial Intelligent Education-(2020-2021)</h4>
+    <h6>San Aibin Artificial Intelligent Education-(2020-2021)</h6>
     {% for item in site.data.teaching_data %}
       {% if item.place == "carlos" and item.year == "2020-2021" %}  
         <p>{{ item.name }}. {{ item.degree }}.</p>
