@@ -3,7 +3,6 @@ menu:
 - {name: 'Publications', url: '/publications'}
 - {name: 'Teaching and Lab', url: '/teaching'}
 - {name: 'CV', url: '/cv'}
-<!--- {name: 'MyLab', url: '/MyLab'} -->
 - {name: 'Contact', url: '/contact'}
 
 
