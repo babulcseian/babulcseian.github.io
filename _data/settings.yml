@@ -5,7 +5,7 @@ menu:
 - {name: 'CV', url: '/cv'}
 - {name: 'Conferences', url: '/conferences'}
 - {name: 'Contact', url: '/contact'}
-
+- {name: 'Contact1', url: '/contact'}
 
 social:
 - {icon: 'fab fa-linkedin fa-3x', link: 'https://www.linkedin.com/in/babulcseian/'}
