@@ -42,9 +42,16 @@
 
 
 ## 📣 **Our Contribution**
+-We have built a data-driven deep-learning model to control the HVAC in Smart Buildings and Environments. Along with this, our proposed model verified the various datasets form the literature. 
 
 ## 📣 **Research Work Updates and Publication**
-
+- [02/09/2024] 🥂 **DT4TP has been accepted by PICOM 2024! See you in PICOM!**
 
 ## 📣 **Collaboration for Further Research Work**
+If you are eager to collaborate on this project, please reach out to us. 
+**Md Babul Islam**,e-mail: babul.islam@dimes.unical.it or babulcseian@gamil.com 
+**Antonio Guerrieri**, e-mail: antonio.guerrieri@icar.cnr.it
+**Raffaele Gravina** e-mail: r.gravina@dimes.unical.it
+**Giancarlo Fortin** e-mail: g.fortino@unical.it
+
 
