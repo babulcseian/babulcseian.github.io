@@ -29,29 +29,29 @@
 
 
 ## Data Descriptions of Omnia Energia in Italy
-- [01/09/2024] **TrustLLM** toolkit has been downloaded for 4000+ times!
-- [15/07/2024] **TrustLLM** now supports [**UniGen**](https://unigen-framework.github.io/) for dynamic evaluation.
+- [01/09/2024] **Laboratory** toolkit has been downloaded for 4000+ times!
+- [15/07/2024] **Office Room** now supports [**UniGen**](https://unigen-framework.github.io/) for dynamic evaluation.
 - [02/05/2024] 🥂 **TrustLLM has been accepted by ICML 2024! See you in Vienna!**
 - [23/04/2024] :star: Version 0.3.0: Major updates including bug fixes, enhanced evaluation, and new models added (including ChatGLM3, Llama3-8b, Llama3-70b, GLM4, Mixtral). ([See details](https://howiehwong.github.io/TrustLLM/changelog.html))
 - [20/03/2024] :star: Version 0.2.4: Fixed many bugs & Support Gemini Pro API
 
 
-
 ## 🙋 **About Data Descriptions of ICAR CNR in Italy **
-- Through this data
+- We have our design IoT lab in various rooms where various sensors are connected with HVAC with IoT cloud edge. [**IoT & Cyber Physical Systems**]([https://unigen-framework.github.io](https://www.icar.cnr.it/en/iot-cyber-physical-systems/)/) 
 
 ## 📣 **Our Contribution**
--We have built a data-driven deep-learning model to control the HVAC in Smart Buildings and Environments. Along with this, our proposed model verified the various datasets form the literature. 
+-We have built a data-driven deep-learning model to control the HVAC in Smart Buildings and Environments. Along with this, our proposed model verified the various datasets from the literature. 
 
 ## 📚 **Research Work Updates and Publication**
 - [02/09/2024] 🥂 **DT4TP has been accepted by PICOM 2024! See you in PICOM!**
 - [02/09/2023] We have built various ML/DL model for control HVAC.
+
 ## 🧬 **Collaboration for Further Research Work**!
 
 If you are eager to collaborate on this project, please reach out to us. <br>
 **Md Babul Islam**, e-mail: mdbabul.islam@dimes.unical.it or babulcseian@gamil.com <br>
-🧑‍🏫**Antonio Guerrieri**, e-mail: antonio.guerrieri@icar.cnr.it <br>
-🧑‍🏫**Raffaele Gravina**, e-mail: r.gravina@dimes.unical.it <br> and
-🧑‍🏫**Giancarlo Fortin**, e-mail: g.fortino@unical.it <br>
+**Antonio Guerrieri**, e-mail: antonio.guerrieri@icar.cnr.it <br>
+**Raffaele Gravina**, e-mail: r.gravina@dimes.unical.it <br> and
+**Giancarlo Fortin**, e-mail: g.fortino@unical.it <br>
 
 
