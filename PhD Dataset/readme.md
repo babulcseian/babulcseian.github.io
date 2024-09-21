@@ -49,7 +49,7 @@
 
 ## 📣 **Collaboration for Further Research Work**
 If you are eager to collaborate on this project, please reach out to us. 
-**Md Babul Islam**,e-mail: babul.islam@dimes.unical.it or babulcseian@gamil.com 
+**Md Babul Islam**,e-mail: mdbabul.islam@dimes.unical.it or babulcseian@gamil.com \\
 **Antonio Guerrieri**, e-mail: antonio.guerrieri@icar.cnr.it
 **Raffaele Gravina** e-mail: r.gravina@dimes.unical.it
 **Giancarlo Fortin** e-mail: g.fortino@unical.it
