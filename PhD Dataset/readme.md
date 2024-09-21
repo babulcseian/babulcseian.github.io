@@ -36,19 +36,19 @@ The AEI Srl is the sub-company of Omnina enrgia. They have their IoT Lab for sma
 - **Laboratory** room where they have various sensors indoor and outdoor to control the HVAC! You could visit the web: [**AeiSrl**](https://www.aei-srl.com/en/)
 - **Office Room** in [**AeiSrl**](https://www.aei-srl.com/en/) for environment evaluation.
 
-## 📈 **About Data Descriptions of ICAR CNR in Italy **
+## 📈 About Data Descriptions of ICAR CNR in Italy
 - We have our own design IoT lab in various rooms. Where room various sensors are connected with HVAC with IoT cloud edge [**IoT and Cyber Physical Systems**](https://www.icar.cnr.it/en/iot-cyber-physical-systems)
 
-## 📣 **Our Contribution**
+## 📣 Our Contribution
 -We have built a data-driven deep-learning model to control the HVAC in Smart Buildings and Environments. Along with this, our proposed model verified the various datasets from the literature. 
 
-## 📈 **Data Descriptions From the Literature**
+## 📈 Data Descriptions From the Literature
 -To validate the proposed approach, we have validated our model with various country smart building HVAC datasets. 
--**Italy** <br>
--**China** (Shanghai and Beijing) <br>
--**German** <br>
--**Denmark **<br>
--**Australia**<br>
+- **Italy** <br>
+- **China** (Shanghai and Beijing) <br>
+- **German** <br>
+- **Denmark** <br>
+- **Australia**<br>
 
 
 ## 📚 **Research Work Updates and Publication**
