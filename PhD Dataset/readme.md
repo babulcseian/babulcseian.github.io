@@ -25,7 +25,7 @@
 <img src="https://img.shields.io/github/languages/top/HowieHwong/TrustLLM?style=flat-square&color=5D6D7E" alt="GitHub top language" />
 </div>
 
-<div align="center">
+<div>
 
 
 ## Data Descriptions of Omnia Energia in Italy
