@@ -1,7 +1,7 @@
 <div align="center">
 
 
-<img src="https://raw.githubusercontent.com/babulcseian/babulcseian.github.io/refs/heads/main/PhD%20Dataset/Omnia%20Dataset.png" width="50%">
+<img src="https://raw.githubusercontent.com/babulcseian/babulcseian.github.io/refs/heads/main/PhD%20Dataset/Omnia%20Dataset.png" width="30%">
 
 # Dataset for "**HVAC: Controlling in Smart Building in Different Location**"
 
