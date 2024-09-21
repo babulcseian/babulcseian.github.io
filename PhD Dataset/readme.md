@@ -44,11 +44,11 @@ The AEI Srl is the sub-company of Omnina enrgia. They have their IoT Lab for sma
 
 ## 📈 **Data Descriptions From the Literature**
 -To validate the proposed approach, we have validated our model with various country smart building HVAC datasets. 
--Italy 
--China (Shanghai and Beijing) 
--German 
--Denmark
--Australia 
+-**Italy** <br>
+-**China** (Shanghai and Beijing) <br>
+-**German** <br>
+-**Denmark **<br>
+-**Australia**<br>
 
 
 ## 📚 **Research Work Updates and Publication**
