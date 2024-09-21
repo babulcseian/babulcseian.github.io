@@ -35,12 +35,12 @@ Omnia Energia Group works for more than 14 years in the field of energy througho
 The AEI Srl is the sub-company of Omnina enrgia. They have their IoT Lab for smart home management. They design different kinds of **buildings/room** to evaluation how their design framework is strong!! In our work we have collected data from various rooms such as
 - **Laboratory** room where they have various sensors indoor and outdoor to control the HVAC! You could visit the web: [**AeiSrl**](https://www.aei-srl.com/en/)
 - **Office Room** in [**AeiSrl**](https://www.aei-srl.com/en/) for environment evaluation.
-
+</div>
 ## 📈 About Data Descriptions of ICAR CNR in Italy
 <div align="center">
 <img src="https://raw.githubusercontent.com/babulcseian/babulcseian.github.io/refs/heads/main/PhD%20Dataset/Babul%20Project%20%7C%7C%20Icar%20CNR%20.jpg" width="10%">
 - We have our own design IoT lab in various rooms. Where room various sensors are connected with HVAC with IoT cloud edge [**IoT and Cyber Physical Systems**](https://www.icar.cnr.it/en/iot-cyber-physical-systems) </div>
-
+<div>
 ## 📈 Data Descriptions From the Literature
 -To validate the proposed approach, we have validated our model with various country smart building HVAC datasets. 
 - **Italy** <br>
