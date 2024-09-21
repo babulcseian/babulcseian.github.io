@@ -28,7 +28,7 @@
 <div>
 
 
-## Data Descriptions of Omnia Energia in Italy
+## 📈 Data Descriptions of Omnia Energia in Italy
 - Update till [01/09/2024], 
 Omnia Energia Group works for more than 14 years in the field of energy throughout the country. Omnia Energia has expanded over the years, by opening new branches in Basilicata, Lazio, Tuscany, Emilia Romagna and Lombardia. The company is headquartered in Calabria, in the industrial area of Zumpano close to Cosenza.The new head office building has been entirely designed and built by the Group companies and is highly energy efficient: A+ class, that is 4.00 kWh/sqm per year of energy performance achievable. Furthermore, the building dissipates 70% less energy than a similar building complying with current regulations. Energy saving means not only cost reduction, but also 10 tons of CO2 avoided. (br)
 
@@ -36,11 +36,20 @@ The AEI Srl is the sub-company of Omnina enrgia. They have their IoT Lab for sma
 - **Laboratory** room where they have various sensors indoor and outdoor to control the HVAC! You could visit the web: [**AeiSrl**](https://www.aei-srl.com/en/)
 - **Office Room** in [**AeiSrl**](https://www.aei-srl.com/en/) for environment evaluation.
 
-## 🙋 **About Data Descriptions of ICAR CNR in Italy **
+## 📈 **About Data Descriptions of ICAR CNR in Italy **
 - We have our own design IoT lab in various rooms. Where room various sensors are connected with HVAC with IoT cloud edge [**IoT and Cyber Physical Systems**](https://www.icar.cnr.it/en/iot-cyber-physical-systems)
 
 ## 📣 **Our Contribution**
 -We have built a data-driven deep-learning model to control the HVAC in Smart Buildings and Environments. Along with this, our proposed model verified the various datasets from the literature. 
+
+## 📈 **Data Descriptions From the Literature**
+-To validate the proposed approach, we have validated our model with various country smart building HVAC datasets. 
+-Italy 
+-China (Shanghai and Beijing) 
+-German 
+-Denmark
+-Australia 
+
 
 ## 📚 **Research Work Updates and Publication**
 - [02/09/2024] 🥂 **DT4TP has been accepted by PICOM 2024! See you in PICOM!**
