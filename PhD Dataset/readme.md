@@ -33,7 +33,7 @@
 Omnia Energia Group works for more than 14 years in the field of energy throughout the country. Omnia Energia has expanded over the years, by opening new branches in Basilicata, Lazio, Tuscany, Emilia Romagna and Lombardia. The company is headquartered in Calabria, in the industrial area of Zumpano close to Cosenza.The new head office building has been entirely designed and built by the Group companies and is highly energy efficient: A+ class, that is 4.00 kWh/sqm per year of energy performance achievable. Furthermore, the building dissipates 70% less energy than a similar building complying with current regulations. Energy saving means not only cost reduction, but also 10 tons of CO2 avoided. (br)
 
 The AEI Srl is the sub-company of Omnina enrgia. They have their IoT Lab for smart home management. They design different kinds of **buildings/room** to evaluation how their design framework is strong!! In our work we have collected data from various rooms such as
-- **Laboratory** room where they have various sensors indoor and outdoor to control the HVAC! [**AeiSrl**](https://www.aei-srl.com/en/)
+- **Laboratory** room where they have various sensors indoor and outdoor to control the HVAC! You could visit the web: [**AeiSrl**](https://www.aei-srl.com/en/)
 - **Office Room** in [**AeiSrl**](https://www.aei-srl.com/en/) for environment evaluation.
 
 ## 🙋 **About Data Descriptions of ICAR CNR in Italy **
