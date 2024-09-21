@@ -7,8 +7,6 @@
 
 [![ICAR Website](https://img.shields.io/badge/Website-%F0%9F%8C%8D-blue?style=for-the-badge&logoWidth=40)](https://www.icar.cnr.it/)
 [![Paper](https://img.shields.io/badge/Paper-%F0%9F%8E%93-lightgrey?style=for-the-badge&logoWidth=40)](https://scholar.google.com/citations?hl=en&user=Zaf5EhQAAAAJ&view_op=list_works&authuser=1&sortby=pubdate)
-
-
 [![Omnia Energia Website](https://img.shields.io/badge/Website-%F0%9F%8C%8D-blue?style=for-the-badge&logoWidth=40)](https://www.omniaenergia.it/)
 [![Paper](https://img.shields.io/badge/Paper-%F0%9F%8E%93-lightgrey?style=for-the-badge&logoWidth=40)](https://scholar.google.com/citations?hl=en&user=Zaf5EhQAAAAJ&view_op=list_works&authuser=1&sortby=pubdate)
 
