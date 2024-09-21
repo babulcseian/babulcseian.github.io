@@ -12,13 +12,13 @@
 
 
 [![DatasetDD](https://img.shields.io/badge/Dataset-%F0%9F%92%BE-green?style=for-the-badge&logoWidth=40)](https://huggingface.co/datasets/TrustLLM/TrustLLM-dataset)
-[![Data Map](https://img.shields.io/badge/Data%20Map-%F0%9F%8D%9F-orange?style=for-the-badge&logoWidth=40)](https://atlas.nomic.ai/map/f64e87d3-c769-4a90-b15d-9dc833acc8ba/8e9d7045-503b-4ba0-bc64-7201cb7aacee?xs=-16.14086&xf=-1.88776&ys=-7.54937&yf=3.88213)
+[![Data Map](https://img.shields.io/badge/Data%20Map-%F0%9F%8D%9F-orange?style=for-the-badge&logoWidth=40)](https://github.com/babulcseian/babulcseian.github.io/tree/main/PhD%20Dataset)
 [![Leaderboard](https://img.shields.io/badge/Leaderboard-%F0%9F%9A%80-brightgreen?style=for-the-badge&logoWidth=40)](https://trustllmbenchmark.github.io/TrustLLM-Website/leaderboard.html)
-[![Toolkit Document](https://img.shields.io/badge/Toolkit%20Document-%F0%9F%93%9A-blueviolet?style=for-the-badge&logoWidth=40)](https://howiehwong.github.io/TrustLLM/)
+[![Toolkit Document](https://img.shields.io/badge/Toolkit%20Document-%F0%9F%93%9A-blueviolet?style=for-the-badge&logoWidth=40)]([https://github.com/babulcseian/babulcseian.github.io/tree/main/PhD%20Dataset](https://www.tensorflow.org/resources/learn-ml/basics-of-machine-learning))
 
-[![Downloads](https://static.pepy.tech/badge/trustllm)](https://pepy.tech/project/trustllm)
-[![Downloads](https://static.pepy.tech/badge/trustllm/month)](https://pepy.tech/project/trustllm)
-[![Downloads](https://static.pepy.tech/badge/trustllm/week)](https://pepy.tech/project/trustllm)
+[![Downloads](https://static.pepy.tech/badge/trustllm)](https://babulcseian.github.io/contact)
+[![Downloads](https://static.pepy.tech/badge/trustllm/month)](https://babulcseian.github.io/contact)
+[![Downloads](https://static.pepy.tech/badge/trustllm/week)](https://babulcseian.github.io/contact)
 
 
 <img src="https://img.shields.io/github/last-commit/HowieHwong/TrustLLM?style=flat-square&color=5D6D7E" alt="git-last-commit" />
