@@ -37,7 +37,7 @@
 
 
 ## 🙋 **About Data Descriptions of ICAR CNR in Italy **
-- We have our design IoT lab in various rooms where various sensors are connected with HVAC with IoT cloud edge. [**IoT & Cyber Physical Systems**]([https://unigen-framework.github.io](https://www.icar.cnr.it/en/iot-cyber-physical-systems/)/) 
+- We have our design IoT lab in various rooms where various sensors are connected with HVAC with IoT cloud edge [**IoT & Cyber Physical Systems**](https://unigen-framework.github.io](https://www.icar.cnr.it/en/iot-cyber-physical-systems/)/) 
 
 ## 📣 **Our Contribution**
 -We have built a data-driven deep-learning model to control the HVAC in Smart Buildings and Environments. Along with this, our proposed model verified the various datasets from the literature. 
