@@ -48,7 +48,7 @@
 - [02/09/2024] 🥂 **DT4TP has been accepted by PICOM 2024! See you in PICOM!**
 
 ## 📣 **Collaboration for Further Research Work**
-If you are eager to collaborate on this project, please reach out to us. 
+If you are eager to collaborate on this project, please reach out to us. <br>
 **Md Babul Islam**,e-mail: mdbabul.islam@dimes.unical.it or babulcseian@gamil.com \\
 **Antonio Guerrieri**, e-mail: antonio.guerrieri@icar.cnr.it
 **Raffaele Gravina** e-mail: r.gravina@dimes.unical.it
