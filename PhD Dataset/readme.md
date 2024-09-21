@@ -13,7 +13,7 @@
 [![DatasetDD](https://img.shields.io/badge/Dataset-%F0%9F%92%BE-green?style=for-the-badge&logoWidth=40)](https://huggingface.co/datasets/TrustLLM/TrustLLM-dataset)
 [![Data Map](https://img.shields.io/badge/Data%20Map-%F0%9F%8D%9F-orange?style=for-the-badge&logoWidth=40)](https://github.com/babulcseian/babulcseian.github.io/tree/main/PhD%20Dataset)
 [![Leaderboard](https://img.shields.io/badge/Leaderboard-%F0%9F%9A%80-brightgreen?style=for-the-badge&logoWidth=40)](https://github.com/babulcseian/babulcseian.github.io/tree/main/PhD%20Dataset)
-[![Toolkit Document](https://img.shields.io/badge/Toolkit%20Document-%F0%9F%93%9A-blueviolet?style=for-the-badge&logoWidth=40)](https://www.tensorflow.org/resources/learn-ml/basics-of-machine-learning))
+[![Toolkit Document](https://img.shields.io/badge/Toolkit%20Document-%F0%9F%93%9A-blueviolet?style=for-the-badge&logoWidth=40)](https://www.tensorflow.org/resources/learn-ml/basics-of-machine-learning)
 
 [![Downloads](https://static.pepy.tech/badge/trustllm)](https://babulcseian.github.io/contact)
 [![Downloads](https://static.pepy.tech/badge/trustllm/month)](https://babulcseian.github.io/contact)
