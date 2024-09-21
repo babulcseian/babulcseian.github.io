@@ -29,14 +29,12 @@
 
 
 ## Data Descriptions of Omnia Energia in Italy
-- Update till [01/09/2024]
-Omnia Energia Group works for more than 14 years in the field of energy throughout the country. Omnia Energia has expanded over the years, by opening new branches in Basilicata, Lazio, Tuscany, Emilia Romagna and Lombardia. The company is headquartered in Calabria, in the industrial area of Zumpano close to Cosenza.The new head office building has been entirely designed and built by the Group companies and is highly energy efficient: A+ class, that is 4.00 kWh/sqm per year of energy performance achievable. Furthermore, the building dissipates 70% less energy than a similar building complying with current regulations. Energy saving means not only cost reduction, but also 10 tons of CO2 avoided.
-- **Laboratory** toolkit has been downloaded for 4000+ times!
-- [15/07/2024] **Office Room** now supports [**UniGen**](https://unigen-framework.github.io/) for dynamic evaluation.
-- [02/05/2024] 🥂 **TrustLLM has been accepted by ICML 2024! See you in Vienna!**
-- [23/04/2024] :star: Version 0.3.0: Major updates including bug fixes, enhanced evaluation, and new models added (including ChatGLM3, Llama3-8b, Llama3-70b, GLM4, Mixtral). ([See details](https://howiehwong.github.io/TrustLLM/changelog.html))
-- [20/03/2024] :star: Version 0.2.4: Fixed many bugs & Support Gemini Pro API
+- Update till [01/09/2024], 
+Omnia Energia Group works for more than 14 years in the field of energy throughout the country. Omnia Energia has expanded over the years, by opening new branches in Basilicata, Lazio, Tuscany, Emilia Romagna and Lombardia. The company is headquartered in Calabria, in the industrial area of Zumpano close to Cosenza.The new head office building has been entirely designed and built by the Group companies and is highly energy efficient: A+ class, that is 4.00 kWh/sqm per year of energy performance achievable. Furthermore, the building dissipates 70% less energy than a similar building complying with current regulations. Energy saving means not only cost reduction, but also 10 tons of CO2 avoided. (br)
 
+The AEI Srl is the sub-company of Omnina enrgia. They have their IoT Lab for smart home management. They design different kinds of **buildings/room** to evaluation how their design framework is strong!! In our work we have collected data from various rooms such as
+- **Laboratory** room where they have various sensors indoor and outdoor to control the HVAC! [**AeiSrl**](https://www.aei-srl.com/en/)
+- **Office Room** in [**AeiSrl**](https://www.aei-srl.com/en/) for environment evaluation.
 
 ## 🙋 **About Data Descriptions of ICAR CNR in Italy **
 - We have our own design IoT lab in various rooms. Where room various sensors are connected with HVAC with IoT cloud edge [**IoT and Cyber Physical Systems**](https://www.icar.cnr.it/en/iot-cyber-physical-systems)
