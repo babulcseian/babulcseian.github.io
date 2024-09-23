@@ -1,4 +1,4 @@
-<div align="center" class="col-md-15">
+<div align="center">
 
 
 <img src="https://raw.githubusercontent.com/babulcseian/babulcseian.github.io/refs/heads/main/PhD%20Dataset/Omnia%20Dataset.png" width="30%">
