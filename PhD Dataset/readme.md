@@ -60,6 +60,6 @@ If you are eager to collaborate on this project, please reach out to us. <br>
 **Md Babul Islam**, e-mail: mdbabul.islam@dimes.unical.it or babulcseian@gamil.com <br>
 **Antonio Guerrieri**, e-mail: antonio.guerrieri@icar.cnr.it <br>
 **Raffaele Gravina**, e-mail: r.gravina@dimes.unical.it <br> and
-**Giancarlo Fortin**, e-mail: g.fortino@unical.it <br>
+**Giancarlo Fortino**, e-mail: g.fortino@unical.it <br>
 
 
