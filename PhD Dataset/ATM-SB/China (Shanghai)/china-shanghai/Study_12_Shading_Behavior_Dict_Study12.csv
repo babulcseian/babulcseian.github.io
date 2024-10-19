@@ -1,0 +1,11 @@
+col_names,Note
+Temperature_Indoor [C],Indoor Temperature [C]
+Relative_Humidity_Indoor [%],Indoor Humidity [%]
+Indoor_Illumination [LUX],Indoor Illumination [LUX]
+Temperature_Outdoor [C],Outdoor Temperature [C]
+Relative_Humidity_Outdoor [%],Outdoor Humidity [%]
+Solar_Radiation [w/m2],Solar Radiation [w/m2]
+Southward_Vertical_Irradiance [w/m2],Southward Vertical Irradiance [w/m2]
+Shading_Status_last,Shading Status at last moment
+Class,Behavior type
+Room_ID,Room_ID
