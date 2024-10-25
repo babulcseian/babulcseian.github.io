@@ -4,6 +4,7 @@ menu:
 - {name: 'Teaching and Lab', url: '/teaching'}
 - {name: 'CV', url: '/cv'}
 - {name: 'Contact', url: '/contact'}
+- {name: 'Tutorial', url: '/Tutorial'}
 
 social:
 - {icon: 'fab fa-linkedin fa-3x', link: 'https://www.linkedin.com/in/babulcseian/'}
