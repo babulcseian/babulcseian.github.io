@@ -16,25 +16,93 @@
       </div>
 
 
+      
+    <title>Posts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: auto;
+        }
+        .post {
+            border-bottom: 1px solid #ccc;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .post-content {
+            max-width: 600px;
+        }
+        .post-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            cursor: pointer;
+            color: #333;
+            text-decoration: none;
+        }
+        .post-title:hover {
+            text-decoration: underline;
+        }
+        .post-meta {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .post-year {
+            font-size: 1.2em;
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+        }
+        .post-details {
+            display: none;
+            margin-top: 10px;
+            color: #333;
+        }
+        .post-sidebar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .post-image {
+            max-width: 60px;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function togglePostDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
 
-<div style="margin-bottom: 200px;">
-        <h2 style="color: #333;">2024</h2>
-        <div style="padding: 10px; border-left: 4px solid #333; margin-left: 10px;">
-            <h3 style="margin: 0; font-size: 1.2em;">FAIR General Conference</h3>
-            <p style="margin: 0; color: #666;">1st Future Artificial Intelligence Research (FAIR) general conference</p>
-            <p style="margin: 0; color: #666; font-size: 0.9em;">Sep 23, 2024 10:00 AM · Napoli, Italy</p>
-            <button style="margin-top: 5px; padding: 5px 10px; font-size: 0.9em; background-color: #007bff; color: white; border: none; border-radius: 5px;">Slides</button>
+    <h1>Posts</h1>
+
+    <div class="post">
+        <div class="post-content">
+            <a href="javascript:void(0)" class="post-title" onclick="togglePostDetails('post1')">
+                Let's play with MNIST! Generate digits with Convolutional Variational Autoencoders
+            </a>
+            <p class="post-meta">Riccardo Cantini · Aug 15, 2021 · 9 min read</p>
+            <div id="post1" class="post-details">
+                <p>This post shows how to build an unsupervised deep learning model for digit generation by leveraging a convolutional variational autoencoder trained on the MNIST dataset of handwritten digits using Keras+Tensorflow.</p>
+            </div>
+        </div>
+        <div class="post-sidebar">
+            <div class="post-year">2021</div>
+            <img src="https://github.com/babulcseian/babulcseian.github.io/blob/main/PhD%20Dataset/Omnia%20Dataset.png" alt="MNIST Example" class="post-image">
         </div>
     </div>
-    <div style="margin-bottom: 70px;">
-        <h2 style="color: #333;">2023</h2>
-        <div style="padding: 10px; border-left: 4px solid #333; margin-left: 10px;">
-            <h3 style="margin: 0; font-size: 1.2em;">DS 2023</h3>
-            <p style="margin: 0; color: #666;">26th international conference on Discovery Science (DS23)</p>
-            <p style="margin: 0; color: #666; font-size: 0.9em;">Oct 9, 2023 10:30 AM · Porto, Portugal</p>
-            <button style="margin-top: 5px; padding: 5px 10px; font-size: 0.9em; background-color: #007bff; color: white; border: none; border-radius: 5px;">Slides</button>
-        </div>
-    </div>
+
+
+
+      
       
     </div>
   </div>
