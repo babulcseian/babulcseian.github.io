@@ -15,8 +15,9 @@
         <img src="{{ site.github.url }}/assets/img/Unical and CNR .jpg" alt="Tutorial" width="50%">
       </div>
 
-
-      
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posts</title>
     <style>
         body {
@@ -49,7 +50,7 @@
             font-size: 0.9em;
         }
         .post-year {
-            font-size: 1.2em;
+            font-size: 1.4em;
             color: #333;
             font-weight: bold;
             text-align: center;
@@ -65,8 +66,8 @@
             align-items: center;
         }
         .post-image {
-            max-width: 100px;
-            margin-top: 10px;
+            max-width: 200px;
+            margin-top:20px;
         }
     </style>
     <script>
@@ -84,6 +85,7 @@
 
     <h1>Posts</h1>
 
+    <!-- Post 1 -->
     <div class="post">
         <div class="post-content">
             <a href="javascript:void(0)" class="post-title" onclick="togglePostDetails('post1')">
@@ -96,12 +98,47 @@
         </div>
         <div class="post-sidebar">
             <div class="post-year">2021</div>
-            <img src="{{ site.github.url }}/assets/img/Unical and CNR .jpg" alt="MNIST Example" class="post-image">
+            <img src="{{ site.github.url }}/assets/img/Unical_and_CNR.jpg" alt="MNIST Example" class="post-image">
+        </div>
+    </div>
+
+    <!-- Post 2 -->
+    <div class="post">
+        <div class="post-content">
+            <a href="javascript:void(0)" class="post-title" onclick="togglePostDetails('post2')">
+                Understanding Transformers for Time Series Analysis
+            </a>
+            <p class="post-meta">Md Babul Islam · Feb 10, 2022 · 12 min read</p>
+            <div id="post2" class="post-details">
+                <p>This article explores how Transformers can be applied to time series analysis, discussing their architecture, advantages, and practical applications in forecasting tasks.</p>
+            </div>
+        </div>
+        <div class="post-sidebar">
+            <div class="post-year">2022</div>
+            <img src="{{ site.github.url }}/assets/img/Transformers.jpg" alt="Transformers Example" class="post-image">
+        </div>
+    </div>
+
+    <!-- Post 3 -->
+    <div class="post">
+        <div class="post-content">
+            <a href="javascript:void(0)" class="post-title" onclick="togglePostDetails('post3')">
+                A Beginner's Guide to Continual Learning in Deep Learning
+            </a>
+            <p class="post-meta">Md Babul Islam · Jun 5, 2023 · 15 min read</p>
+            <div id="post3" class="post-details">
+                <p>Learn the basics of Continual Learning in deep learning, its challenges, and its potential for building adaptive, long-term learning systems in artificial intelligence.</p>
+            </div>
+        </div>
+        <div class="post-sidebar">
+            <div class="post-year">2023</div>
+            <img src="{{ site.github.url }}/assets/img/Continual_Learning.jpg" alt="Continual Learning Example" class="post-image">
         </div>
     </div>
 
 
 
+    
       
       
     </div>
