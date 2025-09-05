@@ -166,7 +166,7 @@ My future dream project: <a class="other" href='https://babulcseian.github.io/la
     <div class="wrap" align="left">
       <h4>Current / Past Collaborations</h4>
       <ul>
-        <li>North South University, Bangladesh, University of Calabria, Italy, North South University, Bangladesh, University of Calabria, Italy, North South University, Bangladesh, University of Calabria, Italy</li>
+        <li>🏫North South University, Bangladesh, 🏛️University of Calabria, Italy, North South University, Bangladesh, University of Calabria, Italy, North South University, Bangladesh, University of Calabria, Italy</li>
         <li>University of Calabria, Italy</li>
       </ul>
 
@@ -180,6 +180,247 @@ My future dream project: <a class="other" href='https://babulcseian.github.io/la
     </div>
   </div>
 </details>
+
+
+
+
+
+
+
+<!-- ===================== Research Collaboration — Pure CSS TABS (Monochrome, Animated) ===================== -->
+<section id="rc-tabs">
+  <style>
+    /* Scoped, monochrome theme */
+    #rc-tabs{
+      --ink:#111; --muted:#666; --line:#e6e6e6; --bg:#fff; --soft:#f8f8f8;
+      --radius:14px; --pad:14px; --shadow:0 10px 28px rgba(0,0,0,.06);
+      color:var(--ink); background:var(--bg);
+      border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial;
+      overflow:hidden;
+    }
+
+    /* Header */
+    #rc-tabs .rc-head{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:10px var(--pad);
+      border-bottom:1px solid var(--line);
+    }
+    #rc-tabs .rc-title{
+      display:flex; gap:10px; align-items:center; font-weight:800; letter-spacing:.2px;
+    }
+    #rc-tabs .rc-title .emoji{ width:22px; height:22px; display:inline-flex; align-items:center; justify-content:center; }
+
+    /* Tabs row */
+    #rc-tabs .rc-tabs{
+      display:flex; gap:6px; align-items:stretch; overflow:auto; padding:8px var(--pad); background:var(--soft);
+      border-bottom:1px solid var(--line);
+      scrollbar-width:thin;
+    }
+
+    /* Hide radios; use labels as tabs */
+    #rc-tabs input[type="radio"]{ display:none; }
+    #rc-tabs .rc-tab{
+      white-space:nowrap; position:relative; cursor:pointer; user-select:none;
+      padding:10px 14px; border:1px solid var(--line); border-radius:999px; background:#fff;
+      font-size:14px; font-weight:700; letter-spacing:.2px;
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+    }
+    #rc-tabs .rc-tab:hover{ transform:translateY(-1px); box-shadow:0 8px 18px rgba(0,0,0,.06); }
+    /* Active tab pill */
+    #rc-tabs input:checked + label.rc-tab{
+      background:#fff; box-shadow: inset 0 0 0 2px #ddd, 0 6px 16px rgba(0,0,0,.05);
+    }
+
+    /* Panels container */
+    #rc-tabs .rc-panels{ position:relative; padding: 14px var(--pad) var(--pad); }
+
+    /* Panels */
+    #rc-tabs .rc-panel{
+      display:none; animation: rcFade .35s ease both;
+    }
+    #rc-tabs .rc-panel[data-active="true"]{ display:block; }
+
+    /* Panel content styles */
+    #rc-tabs .rc-section{
+      border:1px solid var(--line); border-radius:12px; background:#fff;
+      padding:14px; box-shadow:0 2px 12px rgba(0,0,0,.04); margin-bottom:12px;
+    }
+    #rc-tabs h4{ margin:0 0 8px 0; font-size:14px; letter-spacing:.2px; }
+    #rc-tabs p{ color:var(--muted); line-height:1.6; margin:.35rem 0 0; font-size:13.5px; }
+    #rc-tabs ul{ margin:.25rem 0 0; padding-left:1.1rem; }
+    #rc-tabs li{ margin:.35rem 0; }
+    #rc-tabs .grid{ display:grid; gap:12px; grid-template-columns:1fr; }
+    @media (min-width:760px){ #rc-tabs .grid{ grid-template-columns: 1fr 1fr; } }
+
+    /* Definition rows */
+    #rc-tabs .def{ margin:0; }
+    #rc-tabs .row{
+      display:grid; gap:10px; grid-template-columns: 160px 1fr;
+      padding:10px 0; border-bottom:1px dashed var(--line);
+    }
+    #rc-tabs .row:last-child{ border-bottom:none; }
+    #rc-tabs dt{ font-weight:800; }
+    #rc-tabs dd{ margin:0; color:var(--muted); line-height:1.6; }
+
+    /* CTA (monochrome pill) */
+    #rc-tabs .cta{
+      display:inline-block; margin-top:.6rem; padding:10px 14px;
+      border:1px solid var(--line); border-radius:10px; text-decoration:none; color:inherit; background:#fff;
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    #rc-tabs .cta:hover{ transform:translateY(-1px); box-shadow:0 10px 22px rgba(0,0,0,.08); }
+
+    /* Fade animation */
+    @keyframes rcFade { from { opacity:0; transform:translateY(6px) } to { opacity:1; transform:none } }
+
+    /* Accessibility: reduced motion */
+    @media (prefers-reduced-motion: reduce){
+      #rc-tabs .rc-panel{ animation:none !important; }
+      #rc-tabs .rc-tab{ transition:none !important; }
+    }
+  </style>
+
+  <!-- Header -->
+  <header class="rc-head" role="heading" aria-level="2">
+    <div class="rc-title">
+      <span class="emoji" aria-hidden="true">🤝</span>
+      <span>Research Collaboration</span>
+    </div>
+  </header>
+
+  <!-- Tabs -->
+  <div class="rc-tabs" role="tablist" aria-label="Research Collaboration Tabs">
+    <input type="radio" name="rcTab" id="rcTab1" checked>
+    <label class="rc-tab" id="rcTab1Label" for="rcTab1" role="tab" aria-controls="rcPanel1" aria-selected="true">Overview</label>
+
+    <input type="radio" name="rcTab" id="rcTab2">
+    <label class="rc-tab" id="rcTab2Label" for="rcTab2" role="tab" aria-controls="rcPanel2" aria-selected="false">Collaborations</label>
+
+    <input type="radio" name="rcTab" id="rcTab3">
+    <label class="rc-tab" id="rcTab3Label" for="rcTab3" role="tab" aria-controls="rcPanel3" aria-selected="false">Domains</label>
+
+    <input type="radio" name="rcTab" id="rcTab4">
+    <label class="rc-tab" id="rcTab4Label" for="rcTab4" role="tab" aria-controls="rcPanel4" aria-selected="false">Future</label>
+  </div>
+
+  <!-- Panels -->
+  <div class="rc-panels">
+    <!-- Overview -->
+    <section id="rcPanel1" class="rc-panel" role="tabpanel" aria-labelledby="rcTab1Label" data-active="true">
+      <div class="rc-section">
+        <h4>What I Collaborate On</h4>
+        <p>
+          I partner with universities and industry to design efficient, deployment-ready AI systems.
+          This tabbed layout is <em>long-text friendly</em>: add paragraphs, nested lists, or references—the design will hold.
+        </p>
+      </div>
+      <div class="grid">
+        <div class="rc-section">
+          <h4>Focus</h4>
+          <ul>
+            <li>Time-series forecasting &amp; evaluation</li>
+            <li>Model compression (pruning, quantization)</li>
+            <li>Edge deployment patterns (TinyML/TinyLLM)</li>
+          </ul>
+        </div>
+        <div class="rc-section">
+          <h4>Outputs</h4>
+          <ul>
+            <li>Reproducible baselines, ablations, and toolkits</li>
+            <li>Publications and open datasets when possible</li>
+            <li>Prototype-to-deployment blueprints</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collaborations -->
+    <section id="rcPanel2" class="rc-panel" role="tabpanel" aria-labelledby="rcTab2Label" data-active="false">
+      <div class="rc-section">
+        <h4>Current / Past Collaborations</h4>
+        <ul>
+          <li><strong>North South University, Bangladesh</strong> — TinyML for sensor streams, forecasting, and deployability on constrained devices.</li>
+          <li><strong>University of Calabria, Italy</strong> — Smart environments &amp; Digital Twins; robust multivariate models, pruning/quantization, edge readiness.</li>
+        </ul>
+      </div>
+      <div class="rc-section">
+        <h4>Collaboration Modes</h4>
+        <ul>
+          <li>Joint research &amp; co-authored papers</li>
+          <li>Shared benchmarks and baselines</li>
+          <li>Edge deployment pilots (Raspberry Pi, MCUs)</li>
+        </ul>
+        <a class="cta" href="#contact" aria-label="Propose a collaboration">Propose a collaboration</a>
+      </div>
+    </section>
+
+    <!-- Domains -->
+    <section id="rcPanel3" class="rc-panel" role="tabpanel" aria-labelledby="rcTab3Label" data-active="false">
+      <div class="rc-section">
+        <h4>Domains of Work</h4>
+        <dl class="def">
+          <div class="row">
+            <dt>TinyML &amp; IoT</dt>
+            <dd>Pruning/quantization, streaming inference, telemetry, reliability under low-power and low-compute constraints.</dd>
+          </div>
+          <div class="row">
+            <dt>Smart Buildings</dt>
+            <dd>HVAC control, energy optimization, occupancy-aware forecasting, Digital-Twin workflows with sensor-fault tolerance.</dd>
+          </div>
+          <div class="row">
+            <dt>Smart Agriculture</dt>
+            <dd>Soil moisture (VWC) forecasting, rain/no-rain analysis, multi-depth transfer learning and generalization.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Future -->
+    <section id="rcPanel4" class="rc-panel" role="tabpanel" aria-labelledby="rcTab4Label" data-active="false">
+      <div class="rc-section">
+        <h4>Future Opportunities</h4>
+        <p>
+          Open to collaborations that bridge research and real-world impact: efficient transformers, forecasting, and edge-AI.
+          I’m especially interested in projects with measurable deployment outcomes and transparent evaluation.
+        </p>
+        <ul>
+          <li>Designing lightweight models with strong ablations</li>
+          <li>Establishing clear datasets, metrics, and protocols</li>
+          <li>Field trials on edge hardware</li>
+        </ul>
+        <a class="cta" href="#contact" aria-label="Start a conversation">Start a conversation</a>
+      </div>
+    </section>
+  </div>
+</section>
+
+<script>
+  /* Tiny enhancer: toggle aria-selected and data-active for panels (optional; works even if JS is blocked) */
+  (function(){
+    var root = document.getElementById('rc-tabs');
+    if(!root) return;
+    var radios = root.querySelectorAll('input[type="radio"][name="rcTab"]');
+    var labels = root.querySelectorAll('.rc-tab');
+    var panels = root.querySelectorAll('.rc-panel');
+    function activate(idx){
+      labels.forEach((l,i)=>l.setAttribute('aria-selected', i===idx ? 'true' : 'false'));
+      panels.forEach((p,i)=>p.dataset.active = (i===idx) ? 'true' : 'false');
+    }
+    radios.forEach((r,idx)=>{
+      r.addEventListener('change', function(){ if(this.checked) activate(idx); });
+    });
+    /* initial sync for safety */
+    var checkedIndex = Array.from(radios).findIndex(r=>r.checked);
+    activate(checkedIndex<0?0:checkedIndex);
+  })();
+</script>
+<!-- =========================================================================================================== -->
+
+
+
+
+  
 
 
 
