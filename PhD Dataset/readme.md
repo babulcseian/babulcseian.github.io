@@ -52,7 +52,7 @@ The AEI Srl is the sub-company of Omnina enrgia. They have their IoT Lab for sma
 
 ## 📚 **Research Work Updates and Publication**
 - [02/09/2025] 🥂 **iTempDt has been accepted by PICOM 2025! See you in PICOM 2025!**
-- - [02/09/2025] 🥂 **iTempDt has been accepted by PICOM 2025! See you in PICOM 2025!**
+- [02/09/2025] 🥂 **ATM-SB: An Indoor Temperature Prediction Approach for Smart Buildings Based on Deep Learning** by \textbf{Md Babul Islam}, Antonio Guerrieri, Raffaele Gravina, Luigi Rizzo, Giuseppe Scopelliti, Vincenzo D’Agostino, and Giancarlo Fortino (Under Review on **Future Generation Computer Systems**, Elsevier,  Q1 Journal)
 - [02/09/2024] 🥂 **DT4TP has been accepted by PICOM 2024! See you in PICOM!**
 - [02/09/2023] We have built various ML/DL models for controlling HVAC.
 
