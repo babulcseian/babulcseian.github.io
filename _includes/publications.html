@@ -1,179 +1,125 @@
 <div class="row g-5 mb-5">
   <div>
     <h3 class="fw-bold border-bottom pb-3 mb-5">Publications</h3>
+
+    <!-- ============ Journal publications ============ -->
     <h4>Journal publications</h4>
-      {% for item in site.data.publications.journal %}
-        <p> <b>{{ item.idx }}</b>.&nbsp;
-          {% for item_authors in item.authors %}
-            {% if item_authors.last == "1" %}
-              {% if item_authors.me == "1" %}
-                & <u><strong>{{ item_authors.name }}</strong></u>
-              {% else %}
-                {% if item_authors.url == null %}
-                  & {{ item_authors.name }}
-                {% else %}
-                  & <a class="other" href="{{ item_authors.url }}">{{ item_authors.name }}</a>
-                {% endif %}  
-              {% endif %}
+    {% for item in site.data.publications.journal %}
+      <p>
+        <b>{{ item.idx }}</b>.&nbsp;
+        {% comment %} --- Authors list: A, B, & C --- {% endcomment %}
+        {% for a in item.authors %}
+          {% if forloop.last and forloop.length > 1 %} & {% elsif forloop.index0 > 0 %}, {% endif %}
+          {% capture a_name %}
+            {% if a.me == "1" %}
+              <u><strong>{{ a.name }}</strong></u>
             {% else %}
-              {% if item_authors.me == "1" %}
-                <u><strong>{{ item_authors.name }}</strong></u>,
-              {% else %}
-                {% if item_authors.url == null %}
-                  {{ item_authors.name }}, 
-                {% else %}
-                  <a class="other" href="{{ item_authors.url }}">{{ item_authors.name }}</a>, 
-                {% endif %}  
-              {% endif %}
+              {{ a.name }}
             {% endif %}
-          {% endfor %}
-          ({{ item.year }}). <em>{{ item.title }}</em> {{ item.journal }} 
-          <br><!--<a class="paper" href="{{ item.web }}">[journal]</a><a class="paper" href="{{ item.paper }}">[pdf]</a>  -->
-          {% if item.doi != null %}
-            <a class="pdf" href="{{ item.doi }}">[DOI]</a>        
+          {% endcapture %}
+          {% if a.url %}
+            <a class="other" href="{{ a.url }}">{{ a_name | strip }}</a>
+          {% else %}
+            {{ a_name | strip }}
           {% endif %}
-          {% if item.arxiv != null %}
-            <a class="pdf" href="{{ item.arxiv }}">[arXiv]</a>        
-          {% endif %}
-          {% if item.paper != null %}
-            <a class="pdf" href="{{ item.paper }}">[pdf]</a>        
-          {% endif %}
-          {% if item.poster != null %}
-            <a class="presentation" href="{{ item.poster }}">[poster]</a>        
-          {% endif %}
-          {% if item.slides != null %}
-          <a class="presentation" href="{{ item.slides }}">[slides]</a>        
-          {% endif %}
-          {% if item.videos != null %}
-          <a class="presentation" href="{{ item.videos }}">[video]</a>        
-          {% endif %}
-          {% if item.code != null %}
-          <a class="code" href="{{ item.code }}">[code]</a>        
-          {% endif %}
-        </p>  
-        <!-- <p>{{ item.name }} <a href="{{ item.web }}">[journal]</a><a href="{{ item.url }}">[pdf]</a></a></p> -->
-      {% endfor %}
+        {% endfor %}
+        ({{ item.year }}). <em>{{ item.title }}</em>
+        {% assign venue = item.journal | default: item.venue | default: item.publisher %}
+        {% if venue %} {{ venue }}{% endif %}
+        <br>
+        {% if item.doi %}<a class="pdf" href="{{ item.doi }}">[DOI]</a>{% endif %}
+        {% if item.arxiv %} <a class="pdf" href="{{ item.arxiv }}">[arXiv]</a>{% endif %}
+        {% if item.paper %} <a class="pdf" href="{{ item.paper }}">[pdf]</a>{% endif %}
+        {% if item.poster %} <a class="presentation" href="{{ item.poster }}">[poster]</a>{% endif %}
+        {% if item.slides %} <a class="presentation" href="{{ item.slides }}">[slides]</a>{% endif %}
+        {% if item.videos %} <a class="presentation" href="{{ item.videos }}">[video]</a>{% endif %}
+        {% if item.code %} <a class="code" href="{{ item.code }}">[code]</a>{% endif %}
+      </p>
+    {% endfor %}
+
     <br>
+
+    <!-- ============ Conference papers ============ -->
     <h4>Conference papers</h4>
-      {% for item in site.data.publications.conference %}
-        <p> <b>{{ item.idx }}</b>.&nbsp;
-          {% for item_authors in item.authors %}
-            {% if item_authors.last == "1" %}
-              {% if item_authors.me == "1" %}
-                & <u><strong>{{ item_authors.name }}</strong></u>
-              {% else %}
-                {% if item_authors.url == null %}
-                  & {{ item_authors.name }}
-                {% else %}
-                  & <a class="other" href="{{ item_authors.url }}">{{ item_authors.name }}</a>
-                {% endif %}  
-              {% endif %}
+    {% for item in site.data.publications.conference %}
+      <p>
+        <b>{{ item.idx }}</b>.&nbsp;
+        {% for a in item.authors %}
+          {% if forloop.last and forloop.length > 1 %} & {% elsif forloop.index0 > 0 %}, {% endif %}
+          {% capture a_name %}
+            {% if a.me == "1" %}
+              <u><strong>{{ a.name }}</strong></u>
             {% else %}
-              {% if item_authors.me == "1" %}
-                <u><strong>{{ item_authors.name }}</strong></u>,
-              {% else %}
-                {% if item_authors.url == null %}
-                  {{ item_authors.name }}, 
-                {% else %}
-                  <a class="other" href="{{ item_authors.url }}">{{ item_authors.name }}</a>, 
-                {% endif %}  
-              {% endif %}
+              {{ a.name }}
             {% endif %}
-          {% endfor %}
-          ({{ item.year }}). <em>{{ item.title }}</em> {{ item.journal }} 
-          <br><!--<a class="paper" href="{{ item.web }}">[journal]</a><a class="paper" href="{{ item.paper }}">[pdf]</a>-->
-          {% if item.doi != null %}
-            <a class="pdf" href="{{ item.doi }}">[DOI]</a>        
+          {% endcapture %}
+          {% if a.url %}
+            <a class="other" href="{{ a.url }}">{{ a_name | strip }}</a>
+          {% else %}
+            {{ a_name | strip }}
           {% endif %}
-          {% if item.arxiv != null %}
-            <a class="pdf" href="{{ item.arxiv }}">[arXiv]</a>        
-          {% endif %}
-          {% if item.paper != null %}
-            <a class="pdf" href="{{ item.paper }}">[pdf]</a>        
-          {% endif %}
-          {% if item.poster != null %}
-            <a class="presentation" href="{{ item.poster }}">[poster]</a>        
-          {% endif %}
-          {% if item.slides != null %}
-          <a class="presentation" href="{{ item.slides }}">[slides]</a>        
-          {% endif %}
-          {% if item.videos != null %}
-          <a class="presentation" href="{{ item.videos }}">[video]</a>        
-          {% endif %}
-          {% if item.code != null %}
-          <a class="code" href="{{ item.code }}">[code]</a>        
-          {% endif %}
-        </p>
-        <!-- <p>{{ item.name }} <a href="{{ item.web }}">[IEEE]</a><a href="{{ item.url }}">[pdf]</a></p> -->
-      {% endfor %}
+        {% endfor %}
+        ({{ item.year }}). <em>{{ item.title }}</em>
+        {% assign venue = item.journal | default: item.venue | default: item.publisher %}
+        {% if venue %} {{ venue }}{% endif %}
+        <br>
+        {% if item.doi %}<a class="pdf" href="{{ item.doi }}">[DOI]</a>{% endif %}
+        {% if item.arxiv %} <a class="pdf" href="{{ item.arxiv }}">[arXiv]</a>{% endif %}
+        {% if item.paper %} <a class="pdf" href="{{ item.paper }}">[pdf]</a>{% endif %}
+        {% if item.poster %} <a class="presentation" href="{{ item.poster }}">[poster]</a>{% endif %}
+        {% if item.slides %} <a class="presentation" href="{{ item.slides }}">[slides]</a>{% endif %}
+        {% if item.videos %} <a class="presentation" href="{{ item.videos }}">[video]</a>{% endif %}
+        {% if item.code %} <a class="code" href="{{ item.code }}">[code]</a>{% endif %}
+      </p>
+    {% endfor %}
+
     <br>
+
+    <!-- ============ Pre-prints ============ -->
     <h4>Pre-prints</h4>
-      {% for item in site.data.publications.arxiv %}
-        <p>
-          {% for item_authors in item.authors %}
-            {% if item_authors.last == "1" %}
-              {% if item_authors.me == "1" %}
-                & <u><strong>{{ item_authors.name }}</strong></u>
-              {% else %}
-                {% if item_authors.url == null %}
-                  & {{ item_authors.name }}
-                {% else %}
-                  & <a class="other" href="{{ item_authors.url }}">{{ item_authors.name }}</a>
-                {% endif %}  
-              {% endif %}
+    {% for item in site.data.publications.arxiv %}
+      <p>
+        {% for a in item.authors %}
+          {% if forloop.last and forloop.length > 1 %} & {% elsif forloop.index0 > 0 %}, {% endif %}
+          {% capture a_name %}
+            {% if a.me == "1" %}
+              <u><strong>{{ a.name }}</strong></u>
             {% else %}
-              {% if item_authors.me == "1" %}
-                <u><strong>{{ item_authors.name }}</strong></u>,
-              {% else %}
-                {% if item_authors.url == null %}
-                  {{ item_authors.name }}, 
-                {% else %}
-                  <a class="other" href="{{ item_authors.url }}">{{ item_authors.name }}</a>, 
-                {% endif %}  
-              {% endif %}
+              {{ a.name }}
             {% endif %}
-          {% endfor %}
-          ({{ item.year }}). <em>{{ item.title }}</em> {{ item.journal }} 
-          <br><!--<a class="paper" href="{{ item.web }}">[arXiv]</a> <a class="paper" href="{{ item.paper }}">[pdf]</a>  -->
-          {% if item.doi != null %}
-            <a class="pdf" href="{{ item.doi }}">[DOI]</a>        
+          {% endcapture %}
+          {% if a.url %}
+            <a class="other" href="{{ a.url }}">{{ a_name | strip }}</a>
+          {% else %}
+            {{ a_name | strip }}
           {% endif %}
-          {% if item.arxiv != null %}
-            <a class="pdf" href="{{ item.arxiv }}">[arXiv]</a>        
-          {% endif %}
-          {% if item.paper != null %}
-            <a class="pdf" href="{{ item.paper }}">[pdf]</a>        
-          {% endif %}
-          {% if item.poster != null %}
-            <a class="presentation" href="{{ item.poster }}">[poster]</a>        
-          {% endif %}
-          {% if item.slides != null %}
-          <a class="presentation" href="{{ item.slides }}">[slides]</a>        
-          {% endif %}
-          {% if item.videos != null %}
-          <a class="presentation" href="{{ item.videos }}">[video]</a>        
-          {% endif %}
-          {% if item.code != null %}
-          <a class="code" href="{{ item.code }}">[code]</a>        
-          {% endif %}
-        </p> 
-        <!-- <p>{{ item.name }} <a href="{{ item.web }}">[arXiv]</a><a href="{{ item.url }}">[pdf]</a></p> -->
-      {% endfor %}
+        {% endfor %}
+        ({{ item.year }}). <em>{{ item.title }}</em>
+        {% assign venue = item.journal | default: item.venue | default: item.publisher %}
+        {% if venue %} {{ venue }}{% endif %}
+        <br>
+        {% if item.doi %}<a class="pdf" href="{{ item.doi }}">[DOI]</a>{% endif %}
+        {% if item.arxiv %} <a class="pdf" href="{{ item.arxiv }}">[arXiv]</a>{% endif %}
+        {% if item.paper %} <a class="pdf" href="{{ item.paper }}">[pdf]</a>{% endif %}
+        {% if item.poster %} <a class="presentation" href="{{ item.poster }}">[poster]</a>{% endif %}
+        {% if item.slides %} <a class="presentation" href="{{ item.slides }}">[slides]</a>{% endif %}
+        {% if item.videos %} <a class="presentation" href="{{ item.videos }}">[video]</a>{% endif %}
+        {% if item.code %} <a class="code" href="{{ item.code }}">[code]</a>{% endif %}
+      </p>
+    {% endfor %}
+
     <br>
+
+    <!-- ============ M.Sc. Thesis ============ -->
     <h4>M.Sc. Thesis</h4>
-      {% for item in site.data.publications.thesis %}
-        <p><em>{{ item.title }}</em>, {{ item.description }} 
-          <br><!--<a class="paper" href="{{ item.paper }}">[pdf]</a>-->
-          {% if item.paper != null %}
-            <a class="pdf" href="{{ item.paper }}">[pdf]</a>        
-          {% endif %}
-          {% if item.slides != null %}
-          <a class="presentation" href="{{ item.slides }}">[slides]</a>        
-          {% endif %}
-          {% if item.videos != null %}
-          <a class="presentation" href="{{ item.videos }}">[video]</a>        
-          {% endif %}
-        </p>
-      {% endfor %}
+    {% for item in site.data.publications.thesis %}
+      <p>
+        <em>{{ item.title }}</em>, {{ item.description }}
+        <br>
+        {% if item.paper %} <a class="pdf" href="{{ item.paper }}">[pdf]</a>{% endif %}
+        {% if item.slides %} <a class="presentation" href="{{ item.slides }}">[slides]</a>{% endif %}
+        {% if item.videos %} <a class="presentation" href="{{ item.videos }}">[video]</a>{% endif %}
+      </p>
+    {% endfor %}
   </div>
 </div>
