@@ -9,8 +9,7 @@ conference:
 {name: 'Md Babul Islam.', me: '1'}, {name: 'VP Meena'}, {name: 'Francesco Benedetto'}],
 year: '2024',
 title: 'A Review of Machine Learning Methods for IoT Network-Centric Anomaly Detection.',
-journal: '47th International Conference on Telecommunications and Signal Processing (TSP 2024).',
-doi: 'https://doi.org/10.1109/TSP63128.2024.10605928'}
+journal: '47th International Conference on Telecommunications and Signal Processing (TSP 2024).',}
 
 - {idx: '[C7]', authors: [{name: 'Md Babul Islam.', me: '1'}], 
 year: '2022', title: 'Detect deception on banking credit card payment system by machine learning classifiers.', 
