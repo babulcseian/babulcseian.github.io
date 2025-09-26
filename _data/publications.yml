@@ -5,6 +5,10 @@ journal: 'Big Data and Cognitive Computing, Q1',
 doi: 'https://doi.org/10.3390/bdcc8080083'}
 
 conference:
+- {idx: '[C7]', authors: [{name: 'Md Babul Islam.', me: '1'}], 
+year: '2022', title: 'Detect deception on banking credit card payment system by machine learning classifiers.', 
+journal: 'Second International Conference on Cloud Computing and Mechatronic Engineering (I3CME 2022).SPIE Digital Library.', 
+doi: 'https://doi.org/10.1117/12.2655113'}
 - {idx: '[C6]', authors: [{name: 'Md Babul Islam.', me: '1'}], 
 year: '2022', title: 'Detect deception on banking credit card payment system by machine learning classifiers.', 
 journal: 'Second International Conference on Cloud Computing and Mechatronic Engineering (I3CME 2022).SPIE Digital Library.', 
