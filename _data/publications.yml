@@ -5,7 +5,6 @@ journal: 'Big Data and Cognitive Computing, Q1',
 doi: 'https://doi.org/10.3390/bdcc8080083'}
 
 conference:
-- conference:
   - {idx: "[C8]",
      authors: [
        {name: "Anindya Nag"},
