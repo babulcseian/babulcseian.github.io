@@ -5,7 +5,7 @@ journal: 'Big Data and Cognitive Computing, Q1',
 doi: 'https://doi.org/10.3390/bdcc8080083'}
 
 conference:
-{idx: '[C8]', authors: [{name: 'Anindya Nag'}, {name: 'Md Mehedi Hassan'}, {name: 'Dishari Chand Nisarga Mandal'},
+- {idx: '[C8]', authors: [{name: 'Anindya Nag'}, {name: 'Md Mehedi Hassan'}, {name: 'Dishari Chand Nisarga Mandal'},
 {name: 'Md Babul Islam.', me: '1'}, {name: 'VP Meena'}, {name: 'Francesco Benedetto'}],
 year: '2024',
 title: 'A Review of Machine Learning Methods for IoT Network-Centric Anomaly Detection.',
