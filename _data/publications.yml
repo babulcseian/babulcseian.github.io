@@ -1,8 +1,13 @@
 journal:
 - {idx: '[J1]', authors: [{name: 'Md Babul Islam', me: '1'}, {name: 'Antonio Guerrieri'}, {name: 'Raffaele Gravina'}, and {name: 'Giancarlo Fortino'}], 
 year: '2024', 
-title: 'A Meta-Survey on Intelligent Energy-Efficient Buildings', journal: 'Big Data and Cognitive Computing, Q1',
+title: 'A Meta-Survey on Intelligent Energy-Efficient Buildings', journal: 'Big Data and Cognitive Computing-Q1',
 doi: 'https://doi.org/10.3390/bdcc8080083'}
+
+- {idx: '[J2]', authors: [{name: 'Md Babul Islam.', me: '1'}], year: '2023', 
+title: 'Bangladeshi Traffic Sign Recognition and Classification using CNN with Different Kinds of Transfer Learning through a new (BTSRB) Dataset.', 
+journal: '2023 International Conference on Distributed Computing and Electrical Circuits and Electronics (ICDCECE).', 
+doi: 'https://doi.org/10.1109/ICDCECE57866.2023.10151254'}
 
 conference:
 - {idx: '[C7]', authors: [{name: 'Md Babul Islam.', me: '1'}], year: '2023', 
