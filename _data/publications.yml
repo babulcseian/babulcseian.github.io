@@ -15,6 +15,7 @@ journal:
     code: ""
     slides: ""
     videos: ""
+    dataset: ""
     figure: "/assets/img/IEEBS.png"
     fit: "contain"   # use "contain" to avoid cropping; omit or set "cover" to crop
 
