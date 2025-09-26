@@ -1,125 +1,178 @@
-<div class="row g-5 mb-5">
-  <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Publications</h3>
+<!-- publications.html (drop-in page or include) -->
+<style>
+/* ===== Publications Cards (self-contained CSS) ===== */
+.pubs-wrap { display:grid; gap:1.25rem; }
 
-    <!-- ============ Journal publications ============ -->
-    <h4>Journal publications</h4>
-    {% for item in site.data.publications.journal %}
-      <p>
-        <b>{{ item.idx }}</b>.&nbsp;
-        {% comment %} --- Authors list: A, B, & C --- {% endcomment %}
+.pubs-section-title{
+  font-weight:800; margin:2rem 0 1rem; display:inline-flex; align-items:center; gap:.6rem;
+}
+.pubs-section-title .dot{ width:.6rem;height:.6rem;border-radius:50%;background:currentColor;display:inline-block; }
+
+.pub-card{
+  display:grid; grid-template-columns:120px 1fr; gap:1rem;
+  padding:1rem; border-radius:16px; background:#fff; border:1px solid #e9eef3;
+  box-shadow:0 8px 24px rgba(16,24,40,.06); position:relative; overflow:hidden;
+  transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.pub-card:hover{ transform:translateY(-3px); box-shadow:0 16px 36px rgba(16,24,40,.10); border-color:#d6e2ee; }
+
+.pub-card::before{
+  content:""; position:absolute; left:0; top:0; bottom:0; width:6px;
+  background:linear-gradient(180deg,#6E8BFF,#6EE7B7,#F59E0B);
+  animation:sweep 4s linear infinite; background-size:100% 300%;
+}
+@keyframes sweep{ 0%{background-position:0 0} 100%{background-position:0 300%} }
+
+.pub-fig{ width:120px;height:120px;border-radius:12px;object-fit:cover;background:#f3f5f9;border:1px solid #eef2f7; }
+
+.pub-meta{ display:flex; align-items:center; gap:.5rem; margin-bottom:.25rem; }
+.pub-idx{ font-weight:800; color:#475569; }
+.pub-badge{ font-size:.72rem; padding:.2rem .5rem; border-radius:999px; font-weight:700; border:1px solid #e8edf4; background:#f7fafc; color:#475569; }
+
+.badge-journal{
+  background:linear-gradient(90deg,#ecfeff,#eef2ff,#ecfeff);
+  animation:sheeny 3s linear infinite; border-color:#dbeafe; color:#334155;
+}
+@keyframes sheeny{ 0%{background-position:0%} 100%{background-position:100%} }
+.badge-conf{ background:#fefce8; border-color:#fde68a; color:#713f12; }
+.badge-thesis{ background:#f1f5f9; border-color:#e2e8f0; color:#0f172a; }
+
+.pub-title{ font-size:1.05rem; font-weight:800; line-height:1.35; margin:.25rem 0 .35rem; }
+.pub-authors,.pub-venue{ color:#4b5563; font-size:.95rem; }
+.pub-venue{ margin-top:.15rem; }
+
+.pub-actions{ margin-top:.6rem; display:flex; flex-wrap:wrap; gap:.5rem; }
+.btn-chip{
+  display:inline-flex; align-items:center; gap:.4rem; padding:.42rem .7rem;
+  border-radius:999px; font-weight:700; font-size:.85rem; border:1px solid transparent; text-decoration:none;
+  transition:transform .12s ease, box-shadow .12s ease, background .12s ease;
+}
+.btn-chip:hover{ transform:translateY(-1px); box-shadow:0 6px 12px rgba(0,0,0,.07); }
+.btn-doi{    background:#ecfeff; border-color:#a5f3fc; color:#075985; }
+.btn-pdf{    background:#eef2ff; border-color:#c7d2fe; color:#3730a3; }
+.btn-code{   background:#f0fdf4; border-color:#bbf7d0; color:#166534; }
+.btn-slides{ background:#fff7ed; border-color:#fed7aa; color:#9a3412; }
+.btn-video{  background:#fef2f2; border-color:#fecaca; color:#991b1b; }
+
+.me-strong{ text-decoration:underline; font-weight:800; }
+@media (max-width:640px){ .pub-card{ grid-template-columns:1fr; } .pub-fig{ width:100%; height:160px; } }
+
+/* inline SVG placeholder (hidden from AT) */
+.pub-ph { width:120px;height:120px;border-radius:12px;border:1px solid #eef2f7;background:#f8fafc; display:grid; place-items:center; }
+.pub-ph svg{ width:52px; height:52px; opacity:.5; }
+</style>
+
+<div class="pubs-wrap">
+
+  <!-- ===== Journal ===== -->
+  <h4 class="pubs-section-title"><span class="dot"></span> Journal publications</h4>
+  {% for item in site.data.publications.journal %}
+  <article class="pub-card">
+    {% if item.figure %}
+      <img class="pub-fig" src="{{ item.figure | relative_url }}" alt="figure for {{ item.idx }}">
+    {% else %}
+      <div class="pub-ph" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4z" stroke="#94a3b8" stroke-width="1.5"/><path d="M4 15l4-4 5 5 3-3 4 4" stroke="#94a3b8" stroke-width="1.5"/></svg>
+      </div>
+    {% endif %}
+
+    <div>
+      <div class="pub-meta">
+        <span class="pub-idx">{{ item.idx }}</span>
+        <span class="pub-badge badge-journal">Journal</span>
+        <span class="pub-badge">{{ item.year }}</span>
+      </div>
+
+      <h5 class="pub-title">{{ item.title }}</h5>
+
+      <div class="pub-authors">
         {% for a in item.authors %}
           {% if forloop.last and forloop.length > 1 %} & {% elsif forloop.index0 > 0 %}, {% endif %}
-          {% capture a_name %}
-            {% if a.me == "1" %}
-              <u><strong>{{ a.name }}</strong></u>
-            {% else %}
-              {{ a.name }}
-            {% endif %}
-          {% endcapture %}
-          {% if a.url %}
-            <a class="other" href="{{ a.url }}">{{ a_name | strip }}</a>
-          {% else %}
-            {{ a_name | strip }}
-          {% endif %}
+          {% if a.me == "1" %}<span class="me-strong">{{ a.name }}</span>{% else %}{{ a.name }}{% endif %}
         {% endfor %}
-        ({{ item.year }}). <em>{{ item.title }}</em>
-        {% assign venue = item.journal | default: item.venue | default: item.publisher %}
-        {% if venue %} {{ venue }}{% endif %}
-        <br>
-        {% if item.doi %}<a class="pdf" href="{{ item.doi }}">[DOI]</a>{% endif %}
-        {% if item.arxiv %} <a class="pdf" href="{{ item.arxiv }}">[arXiv]</a>{% endif %}
-        {% if item.paper %} <a class="pdf" href="{{ item.paper }}">[pdf]</a>{% endif %}
-        {% if item.poster %} <a class="presentation" href="{{ item.poster }}">[poster]</a>{% endif %}
-        {% if item.slides %} <a class="presentation" href="{{ item.slides }}">[slides]</a>{% endif %}
-        {% if item.videos %} <a class="presentation" href="{{ item.videos }}">[video]</a>{% endif %}
-        {% if item.code %} <a class="code" href="{{ item.code }}">[code]</a>{% endif %}
-      </p>
-    {% endfor %}
+      </div>
 
-    <br>
+      {% assign venue = item.journal | default: item.venue | default: item.publisher %}
+      {% if venue %}<div class="pub-venue">{{ venue }}</div>{% endif %}
 
-    <!-- ============ Conference papers ============ -->
-    <h4>Conference papers</h4>
-    {% for item in site.data.publications.conference %}
-      <p>
-        <b>{{ item.idx }}</b>.&nbsp;
+      <div class="pub-actions">
+        {% if item.doi %}<a class="btn-chip btn-doi" href="{{ item.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+        {% if item.paper %}<a class="btn-chip btn-pdf" href="{{ item.paper }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+        {% if item.slides %}<a class="btn-chip btn-slides" href="{{ item.slides }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+        {% if item.videos %}<a class="btn-chip btn-video" href="{{ item.videos }}" target="_blank" rel="noopener">Video</a>{% endif %}
+        {% if item.code %}<a class="btn-chip btn-code" href="{{ item.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+
+  <!-- ===== Conference ===== -->
+  <h4 class="pubs-section-title"><span class="dot"></span> Conference papers</h4>
+  {% for item in site.data.publications.conference %}
+  <article class="pub-card">
+    {% if item.figure %}
+      <img class="pub-fig" src="{{ item.figure | relative_url }}" alt="figure for {{ item.idx }}">
+    {% else %}
+      <div class="pub-ph" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4z" stroke="#94a3b8" stroke-width="1.5"/><path d="M4 15l4-4 5 5 3-3 4 4" stroke="#94a3b8" stroke-width="1.5"/></svg>
+      </div>
+    {% endif %}
+
+    <div>
+      <div class="pub-meta">
+        <span class="pub-idx">{{ item.idx }}</span>
+        <span class="pub-badge badge-conf">Conference</span>
+        <span class="pub-badge">{{ item.year }}</span>
+      </div>
+
+      <h5 class="pub-title">{{ item.title }}</h5>
+
+      <div class="pub-authors">
         {% for a in item.authors %}
           {% if forloop.last and forloop.length > 1 %} & {% elsif forloop.index0 > 0 %}, {% endif %}
-          {% capture a_name %}
-            {% if a.me == "1" %}
-              <u><strong>{{ a.name }}</strong></u>
-            {% else %}
-              {{ a.name }}
-            {% endif %}
-          {% endcapture %}
-          {% if a.url %}
-            <a class="other" href="{{ a.url }}">{{ a_name | strip }}</a>
-          {% else %}
-            {{ a_name | strip }}
-          {% endif %}
+          {% if a.me == "1" %}<span class="me-strong">{{ a.name }}</span>{% else %}{{ a.name }}{% endif %}
         {% endfor %}
-        ({{ item.year }}). <em>{{ item.title }}</em>
-        {% assign venue = item.journal | default: item.venue | default: item.publisher %}
-        {% if venue %} {{ venue }}{% endif %}
-        <br>
-        {% if item.doi %}<a class="pdf" href="{{ item.doi }}">[DOI]</a>{% endif %}
-        {% if item.arxiv %} <a class="pdf" href="{{ item.arxiv }}">[arXiv]</a>{% endif %}
-        {% if item.paper %} <a class="pdf" href="{{ item.paper }}">[pdf]</a>{% endif %}
-        {% if item.poster %} <a class="presentation" href="{{ item.poster }}">[poster]</a>{% endif %}
-        {% if item.slides %} <a class="presentation" href="{{ item.slides }}">[slides]</a>{% endif %}
-        {% if item.videos %} <a class="presentation" href="{{ item.videos }}">[video]</a>{% endif %}
-        {% if item.code %} <a class="code" href="{{ item.code }}">[code]</a>{% endif %}
-      </p>
-    {% endfor %}
+      </div>
 
-    <br>
+      {% assign venue = item.journal | default: item.venue | default: item.publisher %}
+      {% if venue %}<div class="pub-venue">{{ venue }}</div>{% endif %}
 
-    <!-- ============ Pre-prints ============ -->
-    <h4>Pre-prints</h4>
-    {% for item in site.data.publications.arxiv %}
-      <p>
-        {% for a in item.authors %}
-          {% if forloop.last and forloop.length > 1 %} & {% elsif forloop.index0 > 0 %}, {% endif %}
-          {% capture a_name %}
-            {% if a.me == "1" %}
-              <u><strong>{{ a.name }}</strong></u>
-            {% else %}
-              {{ a.name }}
-            {% endif %}
-          {% endcapture %}
-          {% if a.url %}
-            <a class="other" href="{{ a.url }}">{{ a_name | strip }}</a>
-          {% else %}
-            {{ a_name | strip }}
-          {% endif %}
-        {% endfor %}
-        ({{ item.year }}). <em>{{ item.title }}</em>
-        {% assign venue = item.journal | default: item.venue | default: item.publisher %}
-        {% if venue %} {{ venue }}{% endif %}
-        <br>
-        {% if item.doi %}<a class="pdf" href="{{ item.doi }}">[DOI]</a>{% endif %}
-        {% if item.arxiv %} <a class="pdf" href="{{ item.arxiv }}">[arXiv]</a>{% endif %}
-        {% if item.paper %} <a class="pdf" href="{{ item.paper }}">[pdf]</a>{% endif %}
-        {% if item.poster %} <a class="presentation" href="{{ item.poster }}">[poster]</a>{% endif %}
-        {% if item.slides %} <a class="presentation" href="{{ item.slides }}">[slides]</a>{% endif %}
-        {% if item.videos %} <a class="presentation" href="{{ item.videos }}">[video]</a>{% endif %}
-        {% if item.code %} <a class="code" href="{{ item.code }}">[code]</a>{% endif %}
-      </p>
-    {% endfor %}
+      <div class="pub-actions">
+        {% if item.doi %}<a class="btn-chip btn-doi" href="{{ item.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+        {% if item.paper %}<a class="btn-chip btn-pdf" href="{{ item.paper }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+        {% if item.slides %}<a class="btn-chip btn-slides" href="{{ item.slides }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+      </div>
+    </div>
+  </article>
+  {% endfor %}
 
-    <br>
+  <!-- ===== Thesis ===== -->
+  <h4 class="pubs-section-title"><span class="dot"></span> Thesis</h4>
+  {% for item in site.data.publications.thesis %}
+  <article class="pub-card">
+    {% if item.figure %}
+      <img class="pub-fig" src="{{ item.figure | relative_url }}" alt="thesis figure">
+    {% else %}
+      <div class="pub-ph" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M6 7h12M6 11h8M6 15h10" stroke="#94a3b8" stroke-width="1.5"/></svg>
+      </div>
+    {% endif %}
+    <div>
+      <div class="pub-meta">
+        <span class="pub-badge badge-thesis">Thesis</span>
+        {% if item.year %}<span class="pub-badge">{{ item.year }}</span>{% endif %}
+      </div>
 
-    <!-- ============ M.Sc. Thesis ============ -->
-    <h4>M.Sc. Thesis</h4>
-    {% for item in site.data.publications.thesis %}
-      <p>
-        <em>{{ item.title }}</em>, {{ item.description }}
-        <br>
-        {% if item.paper %} <a class="pdf" href="{{ item.paper }}">[pdf]</a>{% endif %}
-        {% if item.slides %} <a class="presentation" href="{{ item.slides }}">[slides]</a>{% endif %}
-        {% if item.videos %} <a class="presentation" href="{{ item.videos }}">[video]</a>{% endif %}
-      </p>
-    {% endfor %}
-  </div>
+      <h5 class="pub-title">{{ item.title }}</h5>
+      {% if item.description %}<div class="pub-venue">{{ item.description }}</div>{% endif %}
+
+      <div class="pub-actions">
+        {% if item.paper %}<a class="btn-chip btn-pdf" href="{{ item.paper }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+        {% if item.slides %}<a class="btn-chip btn-slides" href="{{ item.slides }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+        {% if item.videos %}<a class="btn-chip btn-video" href="{{ item.videos }}" target="_blank" rel="noopener">Video</a>{% endif %}
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+
 </div>
