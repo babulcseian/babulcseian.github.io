@@ -31,10 +31,10 @@ journal:
     journal: "Neural Computing and Applications (Q1)"
     doi: "https://doi.org/10.1007/s00521-025-10973-5"
     paper: "https://link.springer.com/article/10.1007/s00521-025-10973-5"
-    code: ""
+    code: "https://www.kaggle.com/datasets/nexuswho/tomatofruits"
     slides: ""
     videos: ""
-    dataset: ""
+    dataset: "https://www.kaggle.com/datasets/nexuswho/tomatofruits"
     figure: "/assets/img/paper/journal/tom.png"
     fit: "contain"
     
