@@ -1,1 +1,69 @@
+journal:
+  - idx: "[J3]"
+    year: 2023
+    title: "IoT-driven Cognitive Sustainable Buildings/Environments — A Meta Survey."
+    venue: "IEEE"
+    authors:
+      - "Md Babul Islam (S.)"
+      - "Antonio Guerrieri"
+      - "Giancarlo Fortino"
 
+conference:
+  - idx: "[C7]"
+    year: 2023
+    title: "Bangladeshi Traffic Sign Recognition and Classification using CNN with Different Kinds of Transfer Learning through a new (BTSRB) Dataset."
+    venue: "ICDCECE 2023"
+    doi: "https://doi.org/10.1109/ICDCECE57866.2023.10151254"
+    authors: ["Md Babul Islam"]
+  - idx: "[C6]"
+    year: 2022
+    title: "Detect deception on banking credit card payment system by machine learning classifiers."
+    venue: "I3CME 2022 (SPIE Digital Library)"
+    doi: "https://doi.org/10.1117/12.2655113"
+    authors: ["Md Babul Islam"]
+  - idx: "[C5]"
+    year: 2022
+    title: "Cost Reduce: Credit Card Fraud Identification Using Machine Learning."
+    venue: "ICCES 2022 (IEEE Xplore)"
+    doi: "https://doi.org/10.1109/ICCES54183.2022.9835811"
+    authors: ["Md Babul Islam"]
+  - idx: "[C4]"
+    year: 2022
+    title: "Blockchain Based New E-voting Protocol System without Trusted Tallying Authorities"
+    venue: "CCICT 2022 (IEEE Xplore)"
+    doi: "https://doi.org/10.1109/CCiCT56684.2022.00064"
+    authors: ["Khandaker Sajidul Islam", "Md Babul Islam"]
+  - idx: "[C3]"
+    year: 2022
+    title: "Twitter Opinion Mining on COVID-19 Vaccinations by Machine Learning Presence."
+    venue: "DoSCI 2022 (Springer Nature Singapore)"
+    doi: "https://doi.org/10.1007/978-981-19-3148-2_4"
+    authors: ["Md Babul Islam"]
+  - idx: "[C2]"
+    year: 2021
+    title: "A Fiber Wireless Improved 5G Network-Based Virtual Networking System Focused on Equal Bandwidth."
+    venue: "ISCEIC 2021 (IEEE Xplore)"
+    doi: "https://doi.org/10.1109/ISCEIC53685.2021.00098"
+    authors: ["Md Babul Islam"]
+  - idx: "[C1]"
+    year: 2022
+    title: "Pandemic Outbreak Time: Evaluation of Public Tweet Opinion by Machine Learning."
+    venue: "CCET 2022 (IEEE Xplore)"
+    doi: "https://doi.org/10.1109/CCET56606.2022.10080351"
+    authors: ["Md Babul Islam"]
+
+book_chapter:
+  - idx: "[C1]"
+    year: 2022
+    title: "Pandemic Outbreak Time: Evaluation of Public Tweet Opinion by Machine Learning."
+    venue: "CCET 2022 (IEEE Xplore)"
+    doi: "https://doi.org/10.1109/CCET56606.2022.10080351"
+    authors: ["Md Babul Islam"]
+
+thesis:
+  - year: 2022
+    month: "June"
+    title: "A 5G Network Based on Virtual Network System Focused on Equal Bandwidth"
+    type: "Masters Thesis"
+    institute: "Huzhou University"
+    authors: ["Md Babul Islam"]
