@@ -37,6 +37,25 @@ journal:
     dataset: ""
     figure: "/assets/img/babul.png"
     fit: "contain"
+    
+  - idx: "[J2]"
+    year: 2025
+    title: "ViT-SENet-Tom: machine learning based novel hybrid squeeze excitation network and vision transformer framework for tomato fruits classification"
+    authors:
+      - { name: "S M Masfequier Rahman Swapno" }
+      - { name: "S. M. Nuruzzaman Nobel" }   # শুরুর স্পেস তুলে দিন
+      - { name: "Md Babul Islam", me: "1" }
+      - { name: "Pronaya Bhattachary" }
+      - { name: "Ebrahim A. Mattar" }
+    journal: "Neural Computing and Applications (Q1)"
+    doi: "https://doi.org/10.1007/s00521-025-10973-5"
+    paper: "https://link.springer.com/article/10.1007/s00521-025-10973-5"
+    code: ""
+    slides: ""
+    videos: ""
+    dataset: ""
+    figure: "/assets/img/babul.png"
+    fit: "contain"
 
 
 
