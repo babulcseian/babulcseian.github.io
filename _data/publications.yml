@@ -47,6 +47,7 @@ journal:
       - { name: "Md Babul Islam", me: "1" }
       - { name: "Pronaya Bhattachary" }
       - { name: "Ebrahim A. Mattar" }
+      - { name: "Ebrahim A. Mattar" }
     journal: "Neural Computing and Applications (Q1)"
     doi: "https://doi.org/10.1007/s00521-025-10973-5"
     paper: "https://link.springer.com/article/10.1007/s00521-025-10973-5"
