@@ -19,7 +19,7 @@ journal:
     figure: "/assets/img/IEEBS.png"
     fit: "contain"   # use "contain" to avoid cropping; omit or set "cover" to crop
 
-    - idx: "[J1]"
+    - idx: "[J2]"
     year: 2024
     title: "A Meta-Survey on Intelligent Energy-Efficient Buildings"
     authors:
