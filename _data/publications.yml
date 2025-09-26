@@ -1,8 +1,13 @@
 journal:
-- {idx: '[J3]', authors: [{name: 'Md Babul Islam, S.', me: '1'}, {name: 'Antonio Guerrieri.'}, {name: 'Giancarlo Fortino.'}], year: '2023', title: 'IoT-driven Cognitive Sustainable Buildings/Environments-A Meta Survey.', journal: 'IEEE .'}
+- {idx: '[J1]', authors: [{name: 'Md Babul Islam', me: '1'}, {name: 'Antonio Guerrieri.'}, {name: 'Giancarlo Fortino.'}], 
+year: '2024', 
+title: 'IoT-driven Cognitive Sustainable Buildings/Environments-A Meta Survey.', journal: 'IEEE .'}
 
 conference:
-- {idx: '[C7]', authors: [{name: 'Md Babul Islam.', me: '1'}], year: '2023', title: 'Bangladeshi Traffic Sign Recognition and Classification using CNN with Different Kinds of Transfer Learning through a new (BTSRB) Dataset.', journal: '2023 International Conference on Distributed Computing and Electrical Circuits and Electronics (ICDCECE).', doi: 'https://doi.org/10.1109/ICDCECE57866.2023.10151254'}
+- {idx: '[C7]', authors: [{name: 'Md Babul Islam.', me: '1'}], year: '2023', 
+title: 'Bangladeshi Traffic Sign Recognition and Classification using CNN with Different Kinds of Transfer Learning through a new (BTSRB) Dataset.', 
+journal: '2023 International Conference on Distributed Computing and Electrical Circuits and Electronics (ICDCECE).', 
+doi: 'https://doi.org/10.1109/ICDCECE57866.2023.10151254'}
 - {idx: '[C6]', authors: [{name: 'Md Babul Islam.', me: '1'}], year: '2022', title: 'Detect deception on banking credit card payment system by machine learning classifiers.', journal: 'Second International Conference on Cloud Computing and Mechatronic Engineering (I3CME 2022).SPIE Digital Library.', doi: 'https://doi.org/10.1117/12.2655113'}
 - {idx: '[C5]', authors: [{name: 'Md Babul Islam.', me: '1'}], year: '2022', title: 'Cost Reduce: Credit Card Fraud Identification Using Machine Learning.', journal: '2022 7th International Conference on Communication and Electronics Systems (ICCES). IEEE Xplore.', doi: 'https://doi.org/10.1109/ICCES54183.2022.9835811'}
 - {idx: '[C4]', authors: [{name: 'Khandaker Sajidul Islam, Md Babul Islam.', me: '2'}], year: '2022', title: 'Blockchain Based New E-voting Protocol System without Trusted Tallying Authorities', journal: '2022 Fifth International Conference on Computational Intelligence and Communication Technologies (CCICT). IEEE Xplore.', doi: 'https://doi.org/10.1109/CCiCT56684.2022.00064'}
