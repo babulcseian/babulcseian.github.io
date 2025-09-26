@@ -14,4 +14,4 @@ book chapter:
 - {idx: '[C1]', authors: [{name: 'Md Babul Islam.', me: '1'}], year: '2022', title: 'Pandemic Outbreak Time: Evaluation of Public Tweet Opinion by Machine Learning.', journal: '2022 IEEE International Conference on Current Development in Engineering and Technology (CCET). IEEE Xplore.', doi: 'https://doi.org/10.1109/CCET56606.2022.10080351'}
 
 thesis:
-- {title: 'A 5G Network Based on Virtual Network System Focused on Equal Bandwidth', description: 'Masters thesis, Md Babul Islam, June 2022, Huzhou University.'}
+- {title: 'A 5G Network Based on Virtual Network System Focused on Equal Bandwidth', description: 'Master's thesis, Md Babul Islam, June 2022, Huzhou University.'}
