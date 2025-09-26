@@ -17,14 +17,14 @@ journal:
     videos: ""
     dataset: ""
     figure: "/assets/img/IEEBS.png"
-    fit: "contain"   # use "contain" to avoid cropping; omit or set "cover" to crop
+    fit: "contain"
 
-    - idx: "[J2]"
+  - idx: "[J2]"
     year: 2025
     title: "ViT-SENet-Tom: machine learning based novel hybrid squeeze excitation network and vision transformer framework for tomato fruits classification"
     authors:
       - { name: "S M Masfequier Rahman Swapno" }
-      - { name: " S. M. Nuruzzaman Nobel" }
+      - { name: "S. M. Nuruzzaman Nobel" }   # শুরুর স্পেস তুলে দিন
       - { name: "Md Babul Islam", me: "1" }
       - { name: "Pronaya Bhattachary" }
       - { name: "Ebrahim A. Mattar" }
@@ -35,8 +35,8 @@ journal:
     slides: ""
     videos: ""
     dataset: ""
-    figure: "/assets/img/.png"
-    fit: "contain"   # use "contain" to avoid cropping; omit or set "cover" to crop
+    figure: "/assets/img/babul.png"
+    fit: "contain"
 
 
 
