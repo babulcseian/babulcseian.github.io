@@ -35,7 +35,7 @@ journal:
     slides: ""
     videos: ""
     dataset: ""
-    figure: "/assets/img/img/paper/journal/tom.png"
+    figure: "/assets/img/paper/journal/tom.png"
     fit: "contain"
     
   - idx: "[J2]"
