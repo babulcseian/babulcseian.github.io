@@ -1,7 +1,7 @@
-# publications.yml (place as _data/publications.yml)
+# publications.yml
 
 journal:
-  - idx: "[J7]"
+  - idx: "[J1]"
     year: 2024
     title: "A Meta-Survey on Intelligent Energy-Efficient Buildings"
     authors:
@@ -17,7 +17,6 @@ journal:
     videos: ""
     figure: "/assets/img/IEEBS.png"
     fit: "contain"   # use "contain" to avoid cropping; omit or set "cover" to crop
-    
 
 conference:
   - idx: "[C8]"
@@ -26,6 +25,9 @@ conference:
     authors:
       - { name: "Anindya Nag" }
       - { name: "Md Babul Islam", me: "1" }
+      - { name: "Antonio Guerrieri" }
+      - { name: "Raffaele Gravina" }
+      - { name: "Giancarlo Fortino" }
     journal: "47th International Conference on Telecommunications and Signal Processing (TSP 2024)"
     doi: ""
     paper: "https://your-site.com/papers/C8.pdf"
@@ -33,6 +35,7 @@ conference:
     code: ""
     videos: ""
     figure: "/assets/img/papers/C8-thumb.png"
+    fit: "contain"   # ensures full figure is visible
 
 thesis:
   - title: "A 5G Network Based on Virtual Network System Focused on Equal Bandwidth"
@@ -42,3 +45,4 @@ thesis:
     slides: ""
     videos: ""
     figure: "/assets/img/papers/thesis-thumb.jpg"
+    fit: "contain"
