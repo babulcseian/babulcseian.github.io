@@ -19,6 +19,28 @@ journal:
     figure: "/assets/img/IEEBS.png"
     fit: "contain"   # use "contain" to avoid cropping; omit or set "cover" to crop
 
+    - idx: "[J1]"
+    year: 2024
+    title: "A Meta-Survey on Intelligent Energy-Efficient Buildings"
+    authors:
+      - { name: "Md Babul Islam", me: "1" }
+      - { name: "Antonio Guerrieri" }
+      - { name: "Raffaele Gravina" }
+      - { name: "Giancarlo Fortino" }
+    journal: "Big Data and Cognitive Computing (Q1)"
+    doi: "https://doi.org/10.3390/bdcc8080083"
+    paper: "https://your-site.com/papers/J7.pdf"
+    code: ""
+    slides: ""
+    videos: ""
+    dataset: ""
+    figure: "/assets/img/IEEBS.png"
+    fit: "contain"   # use "contain" to avoid cropping; omit or set "cover" to crop
+
+
+
+    
+
 conference:
   - idx: "[C8]"
     year: 2024
