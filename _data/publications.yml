@@ -13,7 +13,7 @@ journal:
     code: "https://github.com/yourrepo/J7"
     slides: ""
     videos: ""
-    figure: "/assets/img/papers/J7-thumb.jpg"
+    figure: "/assets/img/IEEBS.png"
 
 conference:
   - idx: "[C8]"
