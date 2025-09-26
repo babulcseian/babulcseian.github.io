@@ -1,35 +1,40 @@
+# publications.yml (place as _data/publications.yml)
+
 journal:
-- {idx: '[J7]', authors: [{name: 'Md Babul Islam', me: '1'}], year: '2024', 
-title: 'A Meta-Survey on Intelligent Energy-Efficient Buildings', 
-journal: 'Big Data and Cognitive Computing, Q1', 
-doi: 'https://doi.org/10.3390/bdcc8080083'}
+  - idx: "[J7]"
+    year: 2024
+    title: "A Meta-Survey on Intelligent Energy-Efficient Buildings"
+    authors:
+      - { name: "Md Babul Islam", me: "1" }
+      - { name: "Coauthor Name" }
+    journal: "Big Data and Cognitive Computing (Q1)"
+    doi: "https://doi.org/10.3390/bdcc8080083"
+    paper: "https://your-site.com/papers/J7.pdf"
+    code: "https://github.com/yourrepo/J7"
+    slides: ""
+    videos: ""
+    figure: "/assets/img/papers/J7-thumb.jpg"
 
 conference:
-- {idx: '[C8]', authors: [{name: 'Anindya Nag'}, {name: 'Md Mehedi Hassan'}, {name: 'Dishari Chand Nisarga Mandal'},
-{name: 'Md Babul Islam.', me: '1'}, {name: 'VP Meena'}, {name: 'Francesco Benedetto'}],
-year: '2024',
-title: 'A Review of Machine Learning Methods for IoT Network-Centric Anomaly Detection.',
-journal: 'Second International Conference on Cloud Computing and Mechatronic Engineering (I3CME 2022).SPIE Digital Library.',
-doi: 'https://https://babulcseian.github.io/'}
-
-- {idx: '[C7]', authors: [{name: 'Md Babul Islam.', me: '1'}], 
-year: '2022', title: 'Detect deception on banking credit card payment system by machine learning classifiers.', 
-journal: 'Second International Conference on Cloud Computing and Mechatronic Engineering (I3CME 2022).SPIE Digital Library.', 
-doi: 'https://doi.org/10.1117/12.2655113'}
-
-- {idx: '[C6]', authors: [{name: 'Md Babul Islam.', me: '1'}], 
-year: '2022', title: 'Detect deception on banking credit card payment system by machine learning classifiers.', 
-journal: 'Second International Conference on Cloud Computing and Mechatronic Engineering (I3CME 2022).SPIE Digital Library.', 
-doi: 'https://doi.org/10.1117/12.2655113'}
-
-- {idx: '[C5]', authors: [{name: 'Md Babul Islam.', me: '1'}], year: '2022', title: 'Cost Reduce: Credit Card Fraud Identification Using Machine Learning.', journal: '2022 7th International Conference on Communication and Electronics Systems (ICCES). IEEE Xplore.', doi: 'https://doi.org/10.1109/ICCES54183.2022.9835811'}
-- {idx: '[C4]', authors: [{name: 'Khandaker Sajidul Islam, Md Babul Islam.', me: '2'}], year: '2022', title: 'Blockchain Based New E-voting Protocol System without Trusted Tallying Authorities', journal: '2022 Fifth International Conference on Computational Intelligence and Communication Technologies (CCICT). IEEE Xplore.', doi: 'https://doi.org/10.1109/CCiCT56684.2022.00064'}
-- {idx: '[C3]', authors: [{name: 'Md Babul Islam.', me: '1'}], year: '2022', title: 'Twitter Opinion Mining on COVID-19 Vaccinations by Machine Learning Presence.', journal: 'Proceedings of Third Doctoral Symposium on Computational Intelligence: DoSCI 2022. Springer Nature Singapore.', doi: 'https://doi.org/10.1007/978-981-19-3148-2_4'}
-- {idx: '[C2]', authors: [{name: 'Md Babul Islam.', me: '1'}], year: '2021', title: 'A Fiber Wireless Improved 5G Network-Based Virtual Networking System Focused on Equal Bandwidth.', journal: '2021 2nd international symposium on computer engineering and intelligent communications (ISCEIC). IEEE Xplore.', doi: 'https://doi.org/10.1109/ISCEIC53685.2021.00098'}
-- {idx: '[C1]', authors: [{name: 'Md Babul Islam.', me: '1'}], year: '2022', title: 'Pandemic Outbreak Time: Evaluation of Public Tweet Opinion by Machine Learning.', journal: '2022 IEEE International Conference on Current Development in Engineering and Technology (CCET). IEEE Xplore.', doi: 'https://doi.org/10.1109/CCET56606.2022.10080351'}
-
-book chapter:
-- {idx: '[C1]', authors: [{name: 'Md Babul Islam.', me: '1'}], year: '2022', title: 'Pandemic Outbreak Time: Evaluation of Public Tweet Opinion by Machine Learning.', journal: '2022 IEEE International Conference on Current Development in Engineering and Technology (CCET). IEEE Xplore.', doi: 'https://doi.org/10.1109/CCET56606.2022.10080351'}
+  - idx: "[C8]"
+    year: 2024
+    title: "A Review of Machine Learning Methods for IoT Network-Centric Anomaly Detection."
+    authors:
+      - { name: "Anindya Nag" }
+      - { name: "Md Babul Islam", me: "1" }
+    journal: "47th International Conference on Telecommunications and Signal Processing (TSP 2024)"
+    doi: ""
+    paper: "https://your-site.com/papers/C8.pdf"
+    slides: "https://your-site.com/slides/C8.pdf"
+    code: ""
+    videos: ""
+    figure: "/assets/img/papers/C8-thumb.png"
 
 thesis:
-- {title: 'A 5G Network Based on Virtual Network System Focused on Equal Bandwidth', description: 'Masters thesis, Md Babul Islam, June 2022, Huzhou University.'}
+  - title: "A 5G Network Based on Virtual Network System Focused on Equal Bandwidth"
+    description: "Masters thesis, Md Babul Islam, June 2022, Huzhou University."
+    year: 2022
+    paper: "https://your-site.com/thesis.pdf"
+    slides: ""
+    videos: ""
+    figure: "/assets/img/papers/thesis-thumb.jpg"
