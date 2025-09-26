@@ -6,10 +6,10 @@ journal:
     title: "A Meta-Survey on Intelligent Energy-Efficient Buildings"
     authors:
       - { name: "Md Babul Islam", me: "1" }
-      - { name: "Coauthor Name" }
+      - { name: "Antonio Guerrieri, Raffaele Gravina, Giancarlo Fortino" }
     journal: "Big Data and Cognitive Computing (Q1)"
     doi: "https://doi.org/10.3390/bdcc8080083"
-    paper: "https://your-site.com/papers/J7.pdf"
+    paper: "https://www.mdpi.com/2504-2289/8/8/83"
     code: "https://github.com/yourrepo/J7"
     slides: ""
     videos: ""
