@@ -35,7 +35,7 @@ journal:
     slides: ""
     videos: ""
     dataset: ""
-    figure: "/assets/img/babul.png"
+    figure: "/assets/img/img/paper/journal/ViTSENetTom.webp"
     fit: "contain"
     
   - idx: "[J2]"
