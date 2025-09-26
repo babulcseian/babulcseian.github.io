@@ -20,21 +20,22 @@ journal:
     fit: "contain"   # use "contain" to avoid cropping; omit or set "cover" to crop
 
     - idx: "[J2]"
-    year: 2024
-    title: "A Meta-Survey on Intelligent Energy-Efficient Buildings"
+    year: 2025
+    title: "ViT-SENet-Tom: machine learning based novel hybrid squeeze excitation network and vision transformer framework for tomato fruits classification"
     authors:
+      - { name: "S M Masfequier Rahman Swapno" }
+      - { name: " S. M. Nuruzzaman Nobel" }
       - { name: "Md Babul Islam", me: "1" }
-      - { name: "Antonio Guerrieri" }
-      - { name: "Raffaele Gravina" }
-      - { name: "Giancarlo Fortino" }
-    journal: "Big Data and Cognitive Computing (Q1)"
-    doi: "https://doi.org/10.3390/bdcc8080083"
-    paper: "https://your-site.com/papers/J7.pdf"
+      - { name: "Pronaya Bhattachary" }
+      - { name: "Ebrahim A. Mattar" }
+    journal: "Neural Computing and Applications (Q1)"
+    doi: "https://doi.org/10.1007/s00521-025-10973-5"
+    paper: "https://link.springer.com/article/10.1007/s00521-025-10973-5"
     code: ""
     slides: ""
     videos: ""
     dataset: ""
-    figure: "/assets/img/IEEBS.png"
+    figure: "/assets/img/.png"
     fit: "contain"   # use "contain" to avoid cropping; omit or set "cover" to crop
 
 
