@@ -1,11 +1,7 @@
-<!-- publications.html (drop-in page or include) -->
+<!-- publications.html -->
 <style>
-/* ===== Publications Cards (self-contained CSS) ===== */
 .pubs-wrap { display:grid; gap:1.25rem; }
-
-.pubs-section-title{
-  font-weight:800; margin:2rem 0 1rem; display:inline-flex; align-items:center; gap:.6rem;
-}
+.pubs-section-title{ font-weight:800; margin:2rem 0 1rem; display:inline-flex; align-items:center; gap:.6rem; }
 .pubs-section-title .dot{ width:.6rem;height:.6rem;border-radius:50%;background:currentColor;display:inline-block; }
 
 .pub-card{
@@ -23,16 +19,18 @@
 }
 @keyframes sweep{ 0%{background-position:0 0} 100%{background-position:0 300%} }
 
-.pub-fig{ width:120px;height:120px;border-radius:12px;object-fit:cover;background:#f3f5f9;border:1px solid #eef2f7; }
+.pub-fig{ width:120px; height:120px; border-radius:12px; background:#f3f5f9; border:1px solid #eef2f7; }
+.fit-cover{ object-fit:cover; }
+.fit-contain{ object-fit:contain; }
+
+.pub-ph { width:120px;height:120px;border-radius:12px;border:1px solid #eef2f7;background:#f8fafc; display:grid; place-items:center; }
+.pub-ph svg{ width:52px; height:52px; opacity:.5; }
 
 .pub-meta{ display:flex; align-items:center; gap:.5rem; margin-bottom:.25rem; }
 .pub-idx{ font-weight:800; color:#475569; }
 .pub-badge{ font-size:.72rem; padding:.2rem .5rem; border-radius:999px; font-weight:700; border:1px solid #e8edf4; background:#f7fafc; color:#475569; }
 
-.badge-journal{
-  background:linear-gradient(90deg,#ecfeff,#eef2ff,#ecfeff);
-  animation:sheeny 3s linear infinite; border-color:#dbeafe; color:#334155;
-}
+.badge-journal{ background:linear-gradient(90deg,#ecfeff,#eef2ff,#ecfeff); animation:sheeny 3s linear infinite; border-color:#dbeafe; color:#334155; }
 @keyframes sheeny{ 0%{background-position:0%} 100%{background-position:100%} }
 .badge-conf{ background:#fefce8; border-color:#fde68a; color:#713f12; }
 .badge-thesis{ background:#f1f5f9; border-color:#e2e8f0; color:#0f172a; }
@@ -55,11 +53,7 @@
 .btn-video{  background:#fef2f2; border-color:#fecaca; color:#991b1b; }
 
 .me-strong{ text-decoration:underline; font-weight:800; }
-@media (max-width:640px){ .pub-card{ grid-template-columns:1fr; } .pub-fig{ width:100%; height:160px; } }
-
-/* inline SVG placeholder (hidden from AT) */
-.pub-ph { width:120px;height:120px;border-radius:12px;border:1px solid #eef2f7;background:#f8fafc; display:grid; place-items:center; }
-.pub-ph svg{ width:52px; height:52px; opacity:.5; }
+@media (max-width:640px){ .pub-card{ grid-template-columns:1fr; } .pub-fig,.pub-ph{ width:100%; height:160px; } }
 </style>
 
 <div class="pubs-wrap">
@@ -69,7 +63,7 @@
   {% for item in site.data.publications.journal %}
   <article class="pub-card">
     {% if item.figure %}
-      <img class="pub-fig" src="{{ item.figure | relative_url }}" alt="figure for {{ item.idx }}">
+      <img class="pub-fig {% if item.fit == 'contain' %}fit-contain{% else %}fit-cover{% endif %}" src="{{ item.figure | relative_url }}" alt="figure for {{ item.idx }}">
     {% else %}
       <div class="pub-ph" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4z" stroke="#94a3b8" stroke-width="1.5"/><path d="M4 15l4-4 5 5 3-3 4 4" stroke="#94a3b8" stroke-width="1.5"/></svg>
@@ -86,8 +80,11 @@
       <h5 class="pub-title">{{ item.title }}</h5>
 
       <div class="pub-authors">
+        {% assign total = item.authors | size %}
         {% for a in item.authors %}
-          {% if forloop.last and forloop.length > 1 %} & {% elsif forloop.index0 > 0 %}, {% endif %}
+          {% if forloop.index0 > 0 %}
+            {% if forloop.last %} and {% else %}, {% endif %}
+          {% endif %}
           {% if a.me == "1" %}<span class="me-strong">{{ a.name }}</span>{% else %}{{ a.name }}{% endif %}
         {% endfor %}
       </div>
@@ -111,7 +108,7 @@
   {% for item in site.data.publications.conference %}
   <article class="pub-card">
     {% if item.figure %}
-      <img class="pub-fig" src="{{ item.figure | relative_url }}" alt="figure for {{ item.idx }}">
+      <img class="pub-fig {% if item.fit == 'contain' %}fit-contain{% else %}fit-cover{% endif %}" src="{{ item.figure | relative_url }}" alt="figure for {{ item.idx }}">
     {% else %}
       <div class="pub-ph" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4z" stroke="#94a3b8" stroke-width="1.5"/><path d="M4 15l4-4 5 5 3-3 4 4" stroke="#94a3b8" stroke-width="1.5"/></svg>
@@ -128,8 +125,11 @@
       <h5 class="pub-title">{{ item.title }}</h5>
 
       <div class="pub-authors">
+        {% assign total = item.authors | size %}
         {% for a in item.authors %}
-          {% if forloop.last and forloop.length > 1 %} & {% elsif forloop.index0 > 0 %}, {% endif %}
+          {% if forloop.index0 > 0 %}
+            {% if forloop.last %} and {% else %}, {% endif %}
+          {% endif %}
           {% if a.me == "1" %}<span class="me-strong">{{ a.name }}</span>{% else %}{{ a.name }}{% endif %}
         {% endfor %}
       </div>
@@ -151,7 +151,7 @@
   {% for item in site.data.publications.thesis %}
   <article class="pub-card">
     {% if item.figure %}
-      <img class="pub-fig" src="{{ item.figure | relative_url }}" alt="thesis figure">
+      <img class="pub-fig {% if item.fit == 'contain' %}fit-contain{% else %}fit-cover{% endif %}" src="{{ item.figure | relative_url }}" alt="thesis figure">
     {% else %}
       <div class="pub-ph" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none"><path d="M6 7h12M6 11h8M6 15h10" stroke="#94a3b8" stroke-width="1.5"/></svg>
