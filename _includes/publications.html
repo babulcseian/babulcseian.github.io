@@ -1,4 +1,4 @@
-<!-- publications.html -->
+<!-- publications.html (updated: authors + venue in one line with commas) -->
 <style>
 .pubs-wrap { display:grid; gap:1.25rem; }
 .pubs-section-title{ font-weight:800; margin:2rem 0 1rem; display:inline-flex; align-items:center; gap:.6rem; }
@@ -19,7 +19,7 @@
 }
 @keyframes sweep{ 0%{background-position:0 0} 100%{background-position:0 300%} }
 
-.pub-fig{ width:120px; height:120px; border-radius:12px; background:#f3f5f9; border:1px solid #eef2f7; }
+.pub-fig{ width:120px;height:120px;border-radius:12px;background:#f3f5f9;border:1px solid #eef2f7; }
 .fit-cover{ object-fit:cover; }
 .fit-contain{ object-fit:contain; }
 
@@ -36,8 +36,11 @@
 .badge-thesis{ background:#f1f5f9; border-color:#e2e8f0; color:#0f172a; }
 
 .pub-title{ font-size:1.05rem; font-weight:800; line-height:1.35; margin:.25rem 0 .35rem; }
-.pub-authors,.pub-venue{ color:#4b5563; font-size:.95rem; }
-.pub-venue{ margin-top:.15rem; }
+
+/* ONE-LINE authors + venue */
+.pub-line{ color:#4b5563; font-size:.95rem; }
+.pub-line .pub-authors, .pub-line .pub-venue{ display:inline; }
+.pub-line .pub-venue::before{ content:", "; } /* comma before venue */
 
 .pub-actions{ margin-top:.6rem; display:flex; flex-wrap:wrap; gap:.5rem; }
 .btn-chip{
@@ -79,18 +82,17 @@
 
       <h5 class="pub-title">{{ item.title }}</h5>
 
-      <div class="pub-authors">
-        {% assign total = item.authors | size %}
-        {% for a in item.authors %}
-          {% if forloop.index0 > 0 %}
-            {% if forloop.last %} and {% else %}, {% endif %}
-          {% endif %}
-          {% if a.me == "1" %}<span class="me-strong">{{ a.name }}</span>{% else %}{{ a.name }}{% endif %}
-        {% endfor %}
+      <!-- authors + venue in ONE line, comma-separated -->
+      <div class="pub-line">
+        <span class="pub-authors">
+          {% for a in item.authors %}
+            {% if forloop.index0 > 0 %}, {% endif %}
+            {% if a.me == "1" %}<span class="me-strong">{{ a.name }}</span>{% else %}{{ a.name }}{% endif %}
+          {% endfor %}
+        </span>
+        {% assign venue = item.journal | default: item.venue | default: item.publisher %}
+        {% if venue %}<span class="pub-venue">{{ venue }}</span>{% endif %}
       </div>
-
-      {% assign venue = item.journal | default: item.venue | default: item.publisher %}
-      {% if venue %}<div class="pub-venue">{{ venue }}</div>{% endif %}
 
       <div class="pub-actions">
         {% if item.doi %}<a class="btn-chip btn-doi" href="{{ item.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
@@ -98,7 +100,6 @@
         {% if item.slides %}<a class="btn-chip btn-slides" href="{{ item.slides }}" target="_blank" rel="noopener">Slides</a>{% endif %}
         {% if item.videos %}<a class="btn-chip btn-video" href="{{ item.videos }}" target="_blank" rel="noopener">Video</a>{% endif %}
         {% if item.code %}<a class="btn-chip btn-code" href="{{ item.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
-        {% if item.code %}<a class="btn-chip btn-code" href="{{ item.dataset }}" target="_blank" rel="noopener">Dataset</a>{% endif %}
       </div>
     </div>
   </article>
@@ -125,18 +126,16 @@
 
       <h5 class="pub-title">{{ item.title }}</h5>
 
-      <div class="pub-authors">
-        {% assign total = item.authors | size %}
-        {% for a in item.authors %}
-          {% if forloop.index0 > 0 %}
-            {% if forloop.last %} and {% else %}, {% endif %}
-          {% endif %}
-          {% if a.me == "1" %}<span class="me-strong">{{ a.name }}</span>{% else %}{{ a.name }}{% endif %}
-        {% endfor %}
+      <div class="pub-line">
+        <span class="pub-authors">
+          {% for a in item.authors %}
+            {% if forloop.index0 > 0 %}, {% endif %}
+            {% if a.me == "1" %}<span class="me-strong">{{ a.name }}</span>{% else %}{{ a.name }}{% endif %}
+          {% endfor %}
+        </span>
+        {% assign venue = item.journal | default: item.venue | default: item.publisher %}
+        {% if venue %}<span class="pub-venue">{{ venue }}</span>{% endif %}
       </div>
-
-      {% assign venue = item.journal | default: item.venue | default: item.publisher %}
-      {% if venue %}<div class="pub-venue">{{ venue }}</div>{% endif %}
 
       <div class="pub-actions">
         {% if item.doi %}<a class="btn-chip btn-doi" href="{{ item.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
@@ -165,7 +164,11 @@
       </div>
 
       <h5 class="pub-title">{{ item.title }}</h5>
-      {% if item.description %}<div class="pub-venue">{{ item.description }}</div>{% endif %}
+      {% if item.description %}
+        <div class="pub-line">
+          <span class="pub-authors">{{ item.description }}</span>
+        </div>
+      {% endif %}
 
       <div class="pub-actions">
         {% if item.paper %}<a class="btn-chip btn-pdf" href="{{ item.paper }}" target="_blank" rel="noopener">PDF</a>{% endif %}
