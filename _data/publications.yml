@@ -51,7 +51,7 @@ journal:
       - { name: " Pietro Liò" }
       - { name: "Mohammad Ali Moni" }
     journal: "Neural Computing and Applications (Q1)"
-    doi: " https://doi.org/10.1002/aisy.202400566"
+    doi: "https://doi.org/10.1002/aisy.202400566"
     paper: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/aisy.202400566"
     code: ""
     slides: ""
@@ -61,27 +61,34 @@ journal:
     fit: "contain"
     
   - idx: "[J2]"
-    year: 2025
-    title: "A Novel Mixed Convolution Transformer Model for the Fast and Accurate Diagnosis of Glioma Subtypes"
+    year: 2024
+    title: "Securing electric vehicle performance: Machine learning-driven fault detection and classification"
     authors:
-      - { name: "S M Masfequier Rahman Swapno" }
-      - { name: "S. M. Nuruzzaman Nobel" }   # শুরুর স্পেস তুলে দিন
+      - { name: "Mahbub Ul Islam Khan" }
+      - { name: "Md Ilius Hasan Pathan" }   # শুরুর স্পেস তুলে দিন
+      - { name: "Mohammad Mominur Rahman" }
+      - { name: "Md Maidul Islam" }
+      - { name: "Mohammed Arfat Raihan Chowdhury" }
+      - { name: "Md Shamim Anower" }
+      - { name: "Md Masud Rana" }
+      - { name: "Md Shafiul Alam" }
+      - { name: "Mahmudul Hasan" }
+      - { name: "Md Shohanur Islam Sobuj" }
+      - { name: "Veerpratap Meena, Francesco Benedetto" }
       - { name: "Md Babul Islam", me: "1" }
-      - { name: "AKM Azad" }
-      - { name: "Salem A. Alyami" }
-      - { name: "Md Alamin" }
-      - { name: " Pietro Liò" }
-      - { name: "Mohammad Ali Moni" }
-    journal: "Neural Computing and Applications (Q1)"
-    doi: " https://doi.org/10.1002/aisy.202400566"
-    paper: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/aisy.202400566"
+      - { name: "Veerpratap Meena" }
+      - { name: "Francesco Benedetto" }
+    journal: "IEEE Access (Q1)"
+    doi: "https://ieeexplore.ieee.org/abstract/document/10530324"
+    paper: "https://ieeexplore.ieee.org/abstract/document/10530324"
     code: ""
     slides: ""
     videos: ""
     dataset: ""
     figure: "/assets/img/paper/journal/glioma.png"
     fit: "contain"
-      - idx: "[J2]"
+    
+    - idx: "[J2]"
     year: 2025
     title: "A Novel Mixed Convolution Transformer Model for the Fast and Accurate Diagnosis of Glioma Subtypes"
     authors:
