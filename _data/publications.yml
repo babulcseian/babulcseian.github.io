@@ -188,6 +188,21 @@ conference:
     slides: "https://your-site.com/slides/C8.pdf"
     figure: "/assets/img/papers/C8-thumb.png"
     fit: "contain"
+    
+  - year: 2024
+    title: "A Review of Machine Learning Methods for IoT Network-Centric Anomaly Detection."
+    authors:
+      - { name: "Anindya Nag" }
+      - { name: "Md Babul Islam", me: "1" }
+      - { name: "Antonio Guerrieri" }
+      - { name: "Raffaele Gravina" }
+      - { name: "Giancarlo Fortino" }
+    journal: "47th International Conference on Telecommunications and Signal Processing (TSP 2024)"
+    paper: "https://your-site.com/papers/C8.pdf"
+    slides: "https://your-site.com/slides/C8.pdf"
+    figure: "/assets/img/papers/C8-thumb.png"
+    fit: "contain"
+    
 
 thesis:
   - title: "A 5G Network Based on Virtual Network System Focused on Equal Bandwidth"
