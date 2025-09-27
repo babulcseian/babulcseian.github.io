@@ -248,7 +248,7 @@ conference:
     slides: ""
     videos: ""
     dataset: ""
-    figure: ""/assets/img/paper/conf/"
+    figure: ""
     fit: "contain"
 
   - year: 2023
