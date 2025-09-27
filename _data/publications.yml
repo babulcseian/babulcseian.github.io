@@ -236,6 +236,28 @@ conference:
     slides: ""
     figure: ""
     fit: "contain"
+
+  - year: 2023
+    title: "A Review on Machine Learning for Thermal Comfort and Energy Efficiency in Smart Buildings."
+    authors:
+      - { name: "Md Babul Islam", me: "1" }
+      - { name: "Antonio Guerrieri" }
+      - { name: "Raffaele Gravina" }
+      - { name: "Luigi Rizzo" }
+      - { name: "Scopelliti Giuseppe" }
+      - { name: "D Agostino, Vincenzo" }
+      - { name: "Giancarlo Fortino" }
+    journal: "Proceedings of the 2023 INTERNATIONAL CONFERENCE ON EMBEDDED WIRELESS SYSTEMS AND NETWORKS, EWSN 23"
+    paper: "https://dl.acm.org/doi/10.5555/3639940.3639971"
+    code: "https://dl.acm.org/doi/10.5555/3639940.363997"
+    slides: ""
+    videos: ""
+    dataset: ""
+    slides: ""
+    figure: ""
+    fit: "contain"
+
+    
     
     
   - year: 2024
