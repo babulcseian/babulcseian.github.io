@@ -229,7 +229,7 @@ conference:
     slides: ""
     videos: ""
     dataset: ""
-    figure: "/assets/img/paper/conf/DT4TP"
+    figure: "/assets/img/paper/conf/DT4TP.jpg"
     fit: "contain"
 
   - year: 2023
@@ -248,7 +248,7 @@ conference:
     slides: ""
     videos: ""
     dataset: ""
-    figure: ""
+    figure: "/assets/img/paper/conf/SB review.jpg"
     fit: "contain"
 
   - year: 2023
