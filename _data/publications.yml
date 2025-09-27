@@ -197,17 +197,17 @@ conference:
     fit: "contain"
 
   - year: 2025
-    title: "iTempDT: AI-Powered Digital Twin for Forecasting Indoor Temperature in Smart Buildings"
+    title: "Modeling the Edge-Cloud Continuum: a Brain-Computer Interface Case Study"
     authors:
-      - { name: "Md Babul Islam", me: "1" }
-      - { name: "Antonio Guerrieri" }
-      - { name: "Raffaele Gravina" }
-      - { name: "Luigi Pontieri" }
       - { name: "Luigi Rizzo" }
-      - { name: "Francesco Scala" }
+      - { name: "Paolo Zicari" }
+      - { name: "Raffaele Gravina" }
+      - { name: "Franco Cicirelli" }
+      - { name: "Raffaele Gravina" }
+      - { name: "Md Babul Islam", me: "1" }
+      - { name: "Claudio Savaglio" }
       - { name: "Andrea Vinci" }
-      - { name: "Giancarlo Fortino" }
-    journal: "23rd IEEE International Conference on Pervasive Intelligence and Computing (PICom 2025)"
+    journal: "IEEE International Conference on Human-Machine Systems (2025 Dubai)"
     paper: ""
     code: ""
     slides: ""
@@ -216,6 +216,28 @@ conference:
     slides: ""
     figure: ""
     fit: "contain"
+
+  - year: 2025
+    title: "Modeling the Edge-Cloud Continuum: a Brain-Computer Interface Case Study"
+    authors:
+      - { name: "Luigi Rizzo" }
+      - { name: "Paolo Zicari" }
+      - { name: "Raffaele Gravina" }
+      - { name: "Franco Cicirelli" }
+      - { name: "Raffaele Gravina" }
+      - { name: "Md Babul Islam", me: "1" }
+      - { name: "Claudio Savaglio" }
+      - { name: "Andrea Vinci" }
+    journal: "IEEE International Conference on Human-Machine Systems (2025 Dubai)"
+    paper: ""
+    code: ""
+    slides: ""
+    videos: ""
+    dataset: ""
+    slides: ""
+    figure: ""
+    fit: "contain"
+    
     
   - year: 2024
     title: "A Review of Machine Learning Methods for IoT Network-Centric Anomaly Detection."
