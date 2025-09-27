@@ -594,7 +594,7 @@ conference:
     figure: ""
     fit: "contain"
 
-      - year: 2023
+  - year: 2023
     title: "Classroom Activity Classification with Deep Learning"
     authors:
       - { name: "Abdullah Al-Sakib" }
