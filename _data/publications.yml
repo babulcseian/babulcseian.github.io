@@ -210,7 +210,7 @@ conference:
     slides: ""
     videos: ""
     dataset: ""
-    figure: ""
+    figure: "/assets/img/paper/conf/edge cloud.jpg"
     fit: "contain"
 
   - year: 2024
@@ -229,7 +229,7 @@ conference:
     slides: ""
     videos: ""
     dataset: ""
-    figure: ""
+    figure: "/assets/img/paper/conf/DT4TP"
     fit: "contain"
 
   - year: 2023
@@ -248,7 +248,7 @@ conference:
     slides: ""
     videos: ""
     dataset: ""
-    figure: ""
+    figure: ""/assets/img/paper/conf/"
     fit: "contain"
 
   - year: 2023
@@ -284,7 +284,7 @@ conference:
     slides: "https://your-site.com/slides/C8.pdf"
     videos: ""
     dataset: ""
-    figure: "/assets/img/papers/C8-thumb.png"
+    figure: "/assets/img/paper/conf/fault ditection.jpg"
     fit: "contain"
 
   - year: 2024
