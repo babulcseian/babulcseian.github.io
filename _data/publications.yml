@@ -237,6 +237,26 @@ conference:
     slides: ""
     figure: ""
     fit: "contain"
+
+  - year: 2024
+    title: "iTempDT: AI-Powered Digital Twin for Forecasting Indoor Temperature in Smart Buildings"
+    authors:
+      - { name: "Md Babul Islam", me: "1" }
+      - { name: "Antonio Guerrieri" }
+      - { name: "Raffaele Gravina" }
+      - { name: "Luigi Rizzo" }
+      - { name: "Scopelliti Giuseppe" }
+      - { name: "D Agostino, Vincenzo" }
+      - { name: "Giancarlo Fortino" }
+    journal: "22nd IEEE International Conference on Pervasive Intelligence and Computing (PICom 2024)"
+    paper: "https://ieeexplore.ieee.org/abstract/document/10795414/"
+    code: "https://ieeexplore.ieee.org/abstract/document/10795414/"
+    slides: ""
+    videos: ""
+    dataset: ""
+    slides: ""
+    figure: ""
+    fit: "contain"
     
     
   - year: 2024
