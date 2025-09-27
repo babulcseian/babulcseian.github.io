@@ -1,183 +1,157 @@
-<!-- publications.html (updated: authors + venue in one line with commas) -->
+<!-- publications.html (descending numbers: newest gets the HIGHEST index) -->
 <style>
-.pubs-wrap { display:grid; gap:1.25rem; }
-.pubs-section-title{ font-weight:800; margin:2rem 0 1rem; display:inline-flex; align-items:center; gap:.6rem; }
-.pubs-section-title .dot{ width:.6rem;height:.6rem;border-radius:50%;background:currentColor;display:inline-block; }
-
-.pub-card{
-  display:grid; grid-template-columns:120px 1fr; gap:1rem;
-  padding:1rem; border-radius:16px; background:#fff; border:1px solid #e9eef3;
-  box-shadow:0 8px 24px rgba(16,24,40,.06); position:relative; overflow:hidden;
-  transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
-}
-.pub-card:hover{ transform:translateY(-3px); box-shadow:0 16px 36px rgba(16,24,40,.10); border-color:#d6e2ee; }
-
-.pub-card::before{
-  content:""; position:absolute; left:0; top:0; bottom:0; width:6px;
-  background:linear-gradient(180deg,#6E8BFF,#6EE7B7,#F59E0B);
-  animation:sweep 4s linear infinite; background-size:100% 300%;
-}
-@keyframes sweep{ 0%{background-position:0 0} 100%{background-position:0 300%} }
-
-.pub-fig{ width:120px;height:120px;border-radius:12px;background:#f3f5f9;border:1px solid #eef2f7; }
-.fit-cover{ object-fit:cover; }
-.fit-contain{ object-fit:contain; }
-
-.pub-ph { width:120px;height:120px;border-radius:12px;border:1px solid #eef2f7;background:#f8fafc; display:grid; place-items:center; }
-.pub-ph svg{ width:52px; height:52px; opacity:.5; }
-
-.pub-meta{ display:flex; align-items:center; gap:.5rem; margin-bottom:.25rem; }
-.pub-idx{ font-weight:800; color:#475569; }
-.pub-badge{ font-size:.72rem; padding:.2rem .5rem; border-radius:999px; font-weight:700; border:1px solid #e8edf4; background:#f7fafc; color:#475569; }
-
-.badge-journal{ background:linear-gradient(90deg,#ecfeff,#eef2ff,#ecfeff); animation:sheeny 3s linear infinite; border-color:#dbeafe; color:#334155; }
-@keyframes sheeny{ 0%{background-position:0%} 100%{background-position:100%} }
-.badge-conf{ background:#fefce8; border-color:#fde68a; color:#713f12; }
-.badge-thesis{ background:#f1f5f9; border-color:#e2e8f0; color:#0f172a; }
-
-.pub-title{ font-size:1.05rem; font-weight:800; line-height:1.35; margin:.25rem 0 .35rem; }
-
-/* ONE-LINE authors + venue */
-.pub-line{ color:#4b5563; font-size:.95rem; }
-.pub-line .pub-authors, .pub-line .pub-venue{ display:inline; }
-.pub-line .pub-venue::before{ content:", "; } /* comma before venue */
-
-.pub-actions{ margin-top:.6rem; display:flex; flex-wrap:wrap; gap:.5rem; }
-.btn-chip{
-  display:inline-flex; align-items:center; gap:.4rem; padding:.42rem .7rem;
-  border-radius:999px; font-weight:700; font-size:.85rem; border:1px solid transparent; text-decoration:none;
-  transition:transform .12s ease, box-shadow .12s ease, background .12s ease;
-}
-.btn-chip:hover{ transform:translateY(-1px); box-shadow:0 6px 12px rgba(0,0,0,.07); }
-.btn-doi{    background:#ecfeff; border-color:#a5f3fc; color:#075985; }
-.btn-pdf{    background:#eef2ff; border-color:#c7d2fe; color:#3730a3; }
-.btn-code{   background:#f0fdf4; border-color:#bbf7d0; color:#166534; }
-.btn-slides{ background:#fff7ed; border-color:#fed7aa; color:#9a3412; }
-.btn-video{  background:#fef2f2; border-color:#fecaca; color:#991b1b; }
-
-.me-strong{ text-decoration:underline; font-weight:800; }
-@media (max-width:640px){ .pub-card{ grid-template-columns:1fr; } .pub-fig,.pub-ph{ width:100%; height:160px; } }
+.pubs-wrap{display:grid;gap:1.25rem}
+.pubs-section-title{font-weight:800;margin:2rem 0 1rem;display:inline-flex;align-items:center;gap:.6rem}
+.pubs-section-title .dot{width:.6rem;height:.6rem;border-radius:50%;background:currentColor;display:inline-block}
+.pub-card{display:grid;grid-template-columns:120px 1fr;gap:1rem;padding:1rem;border-radius:16px;background:#fff;border:1px solid #e9eef3;box-shadow:0 8px 24px rgba(16,24,40,.06);position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s,border-color .2s}
+.pub-card:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(16,24,40,.10);border-color:#d6e2ee}
+.pub-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,#6E8BFF,#6EE7B7,#F59E0B);animation:sweep 4s linear infinite;background-size:100% 300%}
+@keyframes sweep{0%{background-position:0 0}100%{background-position:0 300%}}
+.pub-fig{width:120px;height:120px;border-radius:12px;background:#f3f5f9;border:1px solid #eef2f7}
+.fit-cover{object-fit:cover}.fit-contain{object-fit:contain}
+.pub-ph{width:120px;height:120px;border-radius:12px;border:1px solid #eef2f7;background:#f8fafc;display:grid;place-items:center}
+.pub-ph svg{width:52px;height:52px;opacity:.5}
+.pub-meta{display:flex;align-items:center;gap:.5rem;margin-bottom:.25rem}
+.pub-idx{font-weight:800;color:#475569}
+.pub-badge{font-size:.72rem;padding:.2rem .5rem;border-radius:999px;font-weight:700;border:1px solid #e8edf4;background:#f7fafc;color:#475569}
+.badge-journal{background:linear-gradient(90deg,#ecfeff,#eef2ff,#ecfeff);animation:sheeny 3s linear infinite;border-color:#dbeafe;color:#334155}
+@keyframes sheeny{0%{background-position:0%}100%{background-position:100%}}
+.badge-conf{background:#fefce8;border-color:#fde68a;color:#713f12}
+.badge-thesis{background:#f1f5f9;border-color:#e2e8f0;color:#0f172a}
+.pub-title{font-size:1.05rem;font-weight:800;line-height:1.35;margin:.25rem 0 .35rem}
+.pub-line{color:#4b5563;font-size:.95rem}
+.pub-line .pub-authors,.pub-line .pub-venue{display:inline}
+.pub-line .pub-venue::before{content:", "}
+.pub-actions{margin-top:.6rem;display:flex;flex-wrap:wrap;gap:.5rem}
+.btn-chip{display:inline-flex;align-items:center;gap:.4rem;padding:.42rem .7rem;border-radius:999px;font-weight:700;font-size:.85rem;border:1px solid transparent;text-decoration:none;transition:transform .12s,box-shadow .12s,background .12s}
+.btn-chip:hover{transform:translateY(-1px);box-shadow:0 6px 12px rgba(0,0,0,.07)}
+.btn-doi{background:#ecfeff;border-color:#a5f3fc;color:#075985}
+.btn-pdf{background:#eef2ff;border-color:#c7d2fe;color:#3730a3}
+.btn-code{background:#f0fdf4;border-color:#bbf7d0;color:#166534}
+.btn-slides{background:#fff7ed;border-color:#fed7aa;color:#9a3412}
+.btn-video{background:#fef2f2;border-color:#fecaca;color:#991b1b}
+.btn-dataset{background:#ecfdf5;border-color:#a7f3d0;color:#065f46}
+.me-strong{text-decoration:underline;font-weight:800}
+@media (max-width:640px){.pub-card{grid-template-columns:1fr}.pub-fig,.pub-ph{width:100%;height:160px}}
 </style>
 
 <div class="pubs-wrap">
 
-  <!-- ===== Journal ===== -->
+  <!-- ===== Journals: display [JN .. J1] (N = total count) ===== -->
   <h4 class="pubs-section-title"><span class="dot"></span> Journal publications</h4>
-  {% for item in site.data.publications.journal %}
-  <article class="pub-card">
-    {% if item.figure %}
-      <img class="pub-fig {% if item.fit == 'contain' %}fit-contain{% else %}fit-cover{% endif %}" src="{{ item.figure | relative_url }}" alt="figure for {{ item.idx }}">
-    {% else %}
-      <div class="pub-ph" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4z" stroke="#94a3b8" stroke-width="1.5"/><path d="M4 15l4-4 5 5 3-3 4 4" stroke="#94a3b8" stroke-width="1.5"/></svg>
-      </div>
-    {% endif %}
-
-    <div>
-      <div class="pub-meta">
-        <span class="pub-idx">{{ item.idx }}</span>
-        <span class="pub-badge badge-journal">Journal</span>
-        <span class="pub-badge">{{ item.year }}</span>
-      </div>
-
-      <h5 class="pub-title">{{ item.title }}</h5>
-
-      <!-- authors + venue in ONE line, comma-separated -->
-      <div class="pub-line">
-        <span class="pub-authors">
-          {% for a in item.authors %}
-            {% if forloop.index0 > 0 %}, {% endif %}
-            {% if a.me == "1" %}<span class="me-strong">{{ a.name }}</span>{% else %}{{ a.name }}{% endif %}
-          {% endfor %}
-        </span>
-        {% assign venue = item.journal | default: item.venue | default: item.publisher %}
-        {% if venue %}<span class="pub-venue">{{ venue }}</span>{% endif %}
-      </div>
-
-      <div class="pub-actions">
-        {% if item.doi %}<a class="btn-chip btn-doi" href="{{ item.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
-        {% if item.paper %}<a class="btn-chip btn-pdf" href="{{ item.paper }}" target="_blank" rel="noopener">PDF</a>{% endif %}
-        {% if item.slides %}<a class="btn-chip btn-slides" href="{{ item.slides }}" target="_blank" rel="noopener">Slides</a>{% endif %}
-        {% if item.videos %}<a class="btn-chip btn-video" href="{{ item.videos }}" target="_blank" rel="noopener">Video</a>{% endif %}
-        {% if item.code %}<a class="btn-chip btn-code" href="{{ item.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
-        {% if item.code %}<a class="btn-chip btn-code" href="{{ item.dataset }}" target="_blank" rel="noopener">Dataset</a>{% endif %}
-      </div>
-    </div>
-  </article>
-  {% endfor %}
-
-  <!-- ===== Conference ===== -->
-  <h4 class="pubs-section-title"><span class="dot"></span> Conference papers</h4>
-  {% for item in site.data.publications.conference %}
-  <article class="pub-card">
-    {% if item.figure %}
-      <img class="pub-fig {% if item.fit == 'contain' %}fit-contain{% else %}fit-cover{% endif %}" src="{{ item.figure | relative_url }}" alt="figure for {{ item.idx }}">
-    {% else %}
-      <div class="pub-ph" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4z" stroke="#94a3b8" stroke-width="1.5"/><path d="M4 15l4-4 5 5 3-3 4 4" stroke="#94a3b8" stroke-width="1.5"/></svg>
-      </div>
-    {% endif %}
-
-    <div>
-      <div class="pub-meta">
-        <span class="pub-idx">{{ item.idx }}</span>
-        <span class="pub-badge badge-conf">Conference</span>
-        <span class="pub-badge">{{ item.year }}</span>
-      </div>
-
-      <h5 class="pub-title">{{ item.title }}</h5>
-
-      <div class="pub-line">
-        <span class="pub-authors">
-          {% for a in item.authors %}
-            {% if forloop.index0 > 0 %}, {% endif %}
-            {% if a.me == "1" %}<span class="me-strong">{{ a.name }}</span>{% else %}{{ a.name }}{% endif %}
-          {% endfor %}
-        </span>
-        {% assign venue = item.journal | default: item.venue | default: item.publisher %}
-        {% if venue %}<span class="pub-venue">{{ venue }}</span>{% endif %}
-      </div>
-
-      <div class="pub-actions">
-        {% if item.doi %}<a class="btn-chip btn-doi" href="{{ item.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
-        {% if item.paper %}<a class="btn-chip btn-pdf" href="{{ item.paper }}" target="_blank" rel="noopener">PDF</a>{% endif %}
-        {% if item.slides %}<a class="btn-chip btn-slides" href="{{ item.slides }}" target="_blank" rel="noopener">Slides</a>{% endif %}
-      </div>
-    </div>
-  </article>
-  {% endfor %}
-
-  <!-- ===== Thesis ===== -->
-  <h4 class="pubs-section-title"><span class="dot"></span> Thesis</h4>
-  {% for item in site.data.publications.thesis %}
-  <article class="pub-card">
-    {% if item.figure %}
-      <img class="pub-fig {% if item.fit == 'contain' %}fit-contain{% else %}fit-cover{% endif %}" src="{{ item.figure | relative_url }}" alt="thesis figure">
-    {% else %}
-      <div class="pub-ph" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M6 7h12M6 11h8M6 15h10" stroke="#94a3b8" stroke-width="1.5"/></svg>
-      </div>
-    {% endif %}
-    <div>
-      <div class="pub-meta">
-        <span class="pub-badge badge-thesis">Thesis</span>
-        {% if item.year %}<span class="pub-badge">{{ item.year }}</span>{% endif %}
-      </div>
-
-      <h5 class="pub-title">{{ item.title }}</h5>
-      {% if item.description %}
-        <div class="pub-line">
-          <span class="pub-authors">{{ item.description }}</span>
-        </div>
+  {% assign jitems = site.data.publications.journal %}
+  {% assign jtotal = jitems | size %}
+  {% for item in jitems %}
+    {% assign jnum = jtotal | minus: forloop.index0 %}
+    <article class="pub-card" id="J{{ jnum }}">
+      {% if item.figure %}
+        <img class="pub-fig {% if item.fit == 'contain' %}fit-contain{% else %}fit-cover{% endif %}" src="{{ item.figure | relative_url }}" alt="figure">
+      {% else %}
+        <div class="pub-ph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4z" stroke="#94a3b8" stroke-width="1.5"/><path d="M4 15l4-4 5 5 3-3 4 4" stroke="#94a3b8" stroke-width="1.5"/></svg></div>
       {% endif %}
 
-      <div class="pub-actions">
-        {% if item.paper %}<a class="btn-chip btn-pdf" href="{{ item.paper }}" target="_blank" rel="noopener">PDF</a>{% endif %}
-        {% if item.slides %}<a class="btn-chip btn-slides" href="{{ item.slides }}" target="_blank" rel="noopener">Slides</a>{% endif %}
-        {% if item.videos %}<a class="btn-chip btn-video" href="{{ item.videos }}" target="_blank" rel="noopener">Video</a>{% endif %}
+      <div>
+        <div class="pub-meta">
+          <span class="pub-idx">[J{{ jnum }}]</span>
+          <span class="pub-badge badge-journal">Journal</span>
+          <span class="pub-badge">{{ item.year }}</span>
+        </div>
+
+        <h5 class="pub-title">{{ item.title }}</h5>
+
+        <div class="pub-line">
+          <span class="pub-authors">
+            {% for a in item.authors %}
+              {% if forloop.index0 > 0 %}, {% endif %}
+              {% if a.me == "1" %}<span class="me-strong">{{ a.name }}</span>{% else %}{{ a.name }}{% endif %}
+            {% endfor %}
+          </span>
+          {% assign venue = item.journal | default: item.venue | default: item.publisher %}
+          {% if venue %}<span class="pub-venue">{{ venue }}</span>{% endif %}
+        </div>
+
+        <div class="pub-actions">
+          {% if item.doi %}<a class="btn-chip btn-doi" href="{{ item.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+          {% if item.paper %}<a class="btn-chip btn-pdf" href="{{ item.paper }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+          {% if item.slides %}<a class="btn-chip btn-slides" href="{{ item.slides }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+          {% if item.videos %}<a class="btn-chip btn-video" href="{{ item.videos }}" target="_blank" rel="noopener">Video</a>{% endif %}
+          {% if item.code %}<a class="btn-chip btn-code" href="{{ item.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+          {% if item.dataset %}<a class="btn-chip btn-dataset" href="{{ item.dataset }}" target="_blank" rel="noopener">Dataset</a>{% endif %}
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
+  {% endfor %}
+
+  <!-- ===== Conferences: [CN .. C1] ===== -->
+  <h4 class="pubs-section-title"><span class="dot"></span> Conference papers</h4>
+  {% assign citems = site.data.publications.conference %}
+  {% assign ctotal = citems | size %}
+  {% for item in citems %}
+    {% assign cnum = ctotal | minus: forloop.index0 %}
+    <article class="pub-card" id="C{{ cnum }}">
+      {% if item.figure %}
+        <img class="pub-fig {% if item.fit == 'contain' %}fit-contain{% else %}fit-cover{% endif %}" src="{{ item.figure | relative_url }}" alt="figure">
+      {% else %}
+        <div class="pub-ph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4z" stroke="#94a3b8" stroke-width="1.5"/><path d="M4 15l4-4 5 5 3-3 4 4" stroke="#94a3b8" stroke-width="1.5"/></svg></div>
+      {% endif %}
+      <div>
+        <div class="pub-meta">
+          <span class="pub-idx">[C{{ cnum }}]</span>
+          <span class="pub-badge badge-conf">Conference</span>
+          <span class="pub-badge">{{ item.year }}</span>
+        </div>
+
+        <h5 class="pub-title">{{ item.title }}</h5>
+
+        <div class="pub-line">
+          <span class="pub-authors">
+            {% for a in item.authors %}
+              {% if forloop.index0 > 0 %}, {% endif %}
+              {% if a.me == "1" %}<span class="me-strong">{{ a.name }}</span>{% else %}{{ a.name }}{% endif %}
+            {% endfor %}
+          </span>
+          {% assign venue = item.journal | default: item.venue | default: item.publisher %}
+          {% if venue %}<span class="pub-venue">{{ venue }}</span>{% endif %}
+        </div>
+
+        <div class="pub-actions">
+          {% if item.doi %}<a class="btn-chip btn-doi" href="{{ item.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+          {% if item.paper %}<a class="btn-chip btn-pdf" href="{{ item.paper }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+          {% if item.slides %}<a class="btn-chip btn-slides" href="{{ item.slides }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+
+  <!-- ===== Thesis: [TN .. T1] ===== -->
+  <h4 class="pubs-section-title"><span class="dot"></span> Thesis</h4>
+  {% assign titems = site.data.publications.thesis %}
+  {% assign ttotal = titems | size %}
+  {% for item in titems %}
+    {% assign tnum = ttotal | minus: forloop.index0 %}
+    <article class="pub-card" id="T{{ tnum }}">
+      {% if item.figure %}
+        <img class="pub-fig {% if item.fit == 'contain' %}fit-contain{% else %}fit-cover{% endif %}" src="{{ item.figure | relative_url }}" alt="figure">
+      {% else %}
+        <div class="pub-ph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 7h12M6 11h8M6 15h10" stroke="#94a3b8" stroke-width="1.5"/></svg></div>
+      {% endif %}
+      <div>
+        <div class="pub-meta">
+          <span class="pub-idx">[T{{ tnum }}]</span>
+          <span class="pub-badge badge-thesis">Thesis</span>
+          {% if item.year %}<span class="pub-badge">{{ item.year }}</span>{% endif %}
+        </div>
+
+        <h5 class="pub-title">{{ item.title }}</h5>
+        {% if item.description %}<div class="pub-line"><span class="pub-authors">{{ item.description }}</span></div>{% endif %}
+
+        <div class="pub-actions">
+          {% if item.paper %}<a class="btn-chip btn-pdf" href="{{ item.paper }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+          {% if item.slides %}<a class="btn-chip btn-slides" href="{{ item.slides }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+          {% if item.videos %}<a class="btn-chip btn-video" href="{{ item.videos }}" target="_blank" rel="noopener">Video</a>{% endif %}
+        </div>
+      </div>
+    </article>
   {% endfor %}
 
 </div>
