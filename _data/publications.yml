@@ -1,8 +1,8 @@
 # publications.yml (NEW FORMAT — no idx; keep all fields; newest at TOP)
 journal:
- - year: 2025
-    title: "Soil Former: A Customized Transformer for Soil Moisture Forecasting in Irish Scenarios (Under Review)"
-    authors:
+  - year: 2025
+  title: "Soil Former: A Customized Transformer for Soil Moisture Forecasting in Irish Scenarios (Under Review)"
+  authors:
       - { name: "Md Babul Islam", me: "1" }
       - { name: "Antonio Guerrieri" }
       - { name: "Raffaele Gravina" }
