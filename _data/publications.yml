@@ -45,7 +45,7 @@ journal:
       - { name: "Raffaele Gravina" }
       - { name: "Luigi Rizzo" }
       - { name: "Giuseppe Scopelliti" }
-      - { name: "Vincenzo D’Agostino" }
+      - { name: "Vincenzo D Agostino" }
       - { name: "Giancarlo Fortino" }
     journal: "Future Generation Computer Systems (Elsevier, Q1)"
     doi: ""
