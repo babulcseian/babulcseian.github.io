@@ -1,3 +1,4 @@
+# publications.yml (NEW FORMAT — no idx; keep all fields; newest at TOP)
 journal:
   - year: 2025
     title: "ViT-SENet-Tom: machine learning based novel hybrid squeeze excitation network and vision transformer framework for tomato fruits classification"
@@ -10,7 +11,58 @@ journal:
     journal: "Neural Computing and Applications (Q1)"
     doi: "https://doi.org/10.1007/s00521-025-10973-5"
     paper: "https://link.springer.com/article/10.1007/s00521-025-10973-5"
-    figure: "/assets/img/babul.png"
+    code: "https://www.kaggle.com/datasets/nexuswho/tomatofruits"
+    slides: ""
+    videos: ""
+    dataset: "https://www.kaggle.com/datasets/nexuswho/tomatofruits"
+    figure: "/assets/img/paper/journal/tom.png"
+    fit: "contain"
+
+  - year: 2025
+    title: "A Novel Mixed Convolution Transformer Model for the Fast and Accurate Diagnosis of Glioma Subtypes"
+    authors:
+      - { name: "S M Masfequier Rahman Swapno" }
+      - { name: "S. M. Nuruzzaman Nobel" }
+      - { name: "Md Babul Islam", me: "1" }
+      - { name: "AKM Azad" }
+      - { name: "Salem A. Alyami" }
+      - { name: "Md Alamin" }
+      - { name: "Pietro Liò" }
+      - { name: "Mohammad Ali Moni" }
+    journal: "Neural Computing and Applications (Q1)"
+    doi: "https://doi.org/10.1002/aisy.202400566"
+    paper: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/aisy.202400566"
+    code: ""
+    slides: ""
+    videos: ""
+    dataset: ""
+    figure: "/assets/img/paper/journal/glioma.png"
+    fit: "contain"
+
+  - year: 2024
+    title: "Securing electric vehicle performance: Machine learning-driven fault detection and classification"
+    authors:
+      - { name: "Mahbub Ul Islam Khan" }
+      - { name: "Md Ilius Hasan Pathan" }
+      - { name: "Mohammad Mominur Rahman" }
+      - { name: "Md Maidul Islam" }
+      - { name: "Mohammed Arfat Raihan Chowdhury" }
+      - { name: "Md Shamim Anower" }
+      - { name: "Md Masud Rana" }
+      - { name: "Md Shafiul Alam" }
+      - { name: "Mahmudul Hasan" }
+      - { name: "Md Shohanur Islam Sobuj" }
+      - { name: "Md Babul Islam", me: "1" }
+      - { name: "Veerpratap Meena" }
+      - { name: "Francesco Benedetto" }
+    journal: "IEEE Access (Q1)"
+    doi: "https://ieeexplore.ieee.org/abstract/document/10530324"
+    paper: "https://ieeexplore.ieee.org/abstract/document/10530324"
+    code: ""
+    slides: ""
+    videos: ""
+    dataset: ""
+    figure: "/assets/img/paper/journal/glioma.png"
     fit: "contain"
 
   - year: 2024
@@ -23,6 +75,10 @@ journal:
     journal: "Big Data and Cognitive Computing (Q1)"
     doi: "https://doi.org/10.3390/bdcc8080083"
     paper: "https://your-site.com/papers/J7.pdf"
+    code: ""
+    slides: ""
+    videos: ""
+    dataset: ""
     figure: "/assets/img/IEEBS.png"
     fit: "contain"
 
