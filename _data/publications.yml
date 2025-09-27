@@ -575,6 +575,50 @@ conference:
     figure: ""
     fit: "contain"
 
+  - year: 2023
+    title: "Traffic Light Control Using Reinforcement Learning"
+    authors:
+      - { name: "Basitur Rahman Bappi" }
+      - { name: "S. M. Masfequier Rahman Swapno" }
+      - { name: "Ramachandra A C" }
+      - { name: "Keshav Kaushik" }
+      - { name: "Md Babul Islam", me: "1" }
+      - { name: "Rezaul Haque" }
+      - { name: "Mohammad Mominur Rahman", }
+    journal: "Integrated Circuits and Communication Systems (ICICACS), IEEE International Conference"
+    paper: "https://ieeexplore.ieee.org/abstract/document/10498933"
+    # code: ""
+    # slides: ""
+    # videos: ""
+    # dataset: ""
+    figure: ""
+    fit: "contain"
+
+      - year: 2023
+    title: "Classroom Activity Classification with Deep Learning"
+    authors:
+      - { name: "Abdullah Al-Sakib" }
+      - { name: "Fahadul Islam" }
+      - { name: "Ramachandra A C" }
+      - { name: "Keshav Kaushik" }
+      - { name: "Md Babul Islam", me: "1" }
+      - { name: "Ayesha Siddiqua" }
+      - { name: "Mohammad Mominur Rahman", }
+    journal: "Integrated Circuits and Communication Systems (ICICACS)"
+    paper: "https://ieeexplore.ieee.org/abstract/document/10498187"
+    # code: ""
+    # slides: ""
+    # videos: ""
+    # dataset: ""
+    figure: ""
+    fit: "contain"
+
+
+
+
+
+    
+
 thesis:
   - title: "A 5G Network Based on Virtual Network System Focused on Equal Bandwidth"
     description: "Masters thesis, Md Babul Islam, June 2022, Huzhou University."
