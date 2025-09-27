@@ -1,5 +1,24 @@
 # publications.yml (NEW FORMAT — no idx; keep all fields; newest at TOP)
 journal:
+ - year: 2025
+    title: "Soil Former: A Customized Transformer for Soil Moisture Forecasting in Irish Scenarios (Under Review)"
+    authors:
+      - { name: "Md Babul Islam", me: "1" }
+      - { name: "Antonio Guerrieri" }
+      - { name: "Raffaele Gravina" }
+      - { name: "John Byabazaire" }
+      - { name: "Giancarlo Fortino" }
+      - { name: "Declan T. Delaney" }
+    journal: "IEEE Sensors Journal (Q1)"
+    doi: ""
+    paper: ""
+    code: ""
+    slides: ""
+    videos: ""
+    dataset: ""
+    figure: ""
+    fit: "contain"
+    
   - year: 2025
     title: "ViT-SENet-Tom: machine learning based novel hybrid squeeze excitation network and vision transformer framework for tomato fruits classification"
     authors:
