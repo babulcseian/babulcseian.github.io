@@ -17,6 +17,80 @@ journal:
     dataset: ""
     figure: ""
     fit: "contain"
+
+  - year: 2025
+    title: "iBTEC: A Tiny Deep Learning Approach for Temperature and Occupancy Prediction in Smart Buildings (Under Review)"
+    authors:
+      - { name: "Md Babul Islam", me: "1" }
+      - { name: "Qimeng Li" }
+      - { name: "Antonio Guerrieri" }
+      - { name: "Raffaele Gravina" }
+      - { name: "Luigi Rizzo" }
+      - { name: "Giancarlo Fortino" }
+    journal: "Future Generation Computer Systems (Elsevier, Q1)"
+    doi: ""
+    paper: ""
+    code: ""
+    slides: ""
+    videos: ""
+    dataset: ""
+    figure: ""
+    fit: "contain"
+
+  - year: 2025
+    title: "ATM-SB: An Indoor Temperature Prediction Approach for Smart Buildings Based on Deep Learning (Under Review)"
+    authors:
+      - { name: "Md Babul Islam", me: "1" }
+      - { name: "Antonio Guerrieri" }
+      - { name: "Raffaele Gravina" }
+      - { name: "Luigi Rizzo" }
+      - { name: "Giuseppe Scopelliti" }
+      - { name: "Vincenzo D’Agostino" }
+      - { name: "Giancarlo Fortino" }
+    journal: "Future Generation Computer Systems (Elsevier, Q1)"
+    doi: ""
+    paper: ""
+    code: ""
+    slides: ""
+    videos: ""
+    dataset: ""
+    figure: ""
+    fit: "contain"
+
+  - year: 2025
+    title: "From Traditional Machine Learning to Fine-Tuning Large Language Models: A Review for Sensors-Based Soil Moisture Forecasting (Under Review)"
+    authors:
+      - { name: "Md Babul Islam", me: "1" }
+      - { name: "Antonio Guerrieri" }
+      - { name: "Raffaele Gravina" }
+      - { name: "Declan T. Delaney" }
+      - { name: "Giancarlo Fortino" }
+    journal: "MDPI Sensors"
+    doi: ""
+    paper: ""
+    code: ""
+    slides: ""
+    videos: ""
+    dataset: ""
+    figure: ""
+    fit: "contain"
+
+  - year: 2025
+    status: "Draft"
+    title: "Lightweight AI in IoT Applications: A Review of TinyML, TinyDL, and Emerging TinyLLMs"
+    authors:
+      - { name: "Md Babul Islam", me: "1" }
+      - { name: "Antonio Guerrieri" }
+      # add more coauthors here if you like
+    journal: "ACM Computing Surveys (Q1)"
+    doi: ""
+    paper: ""
+    code: ""
+    slides: ""
+    videos: ""
+    dataset: ""
+    figure: ""
+    fit: "contain"
     
   - year: 2025
     title: "ViT-SENet-Tom: machine learning based novel hybrid squeeze excitation network and vision transformer framework for tomato fruits classification"
