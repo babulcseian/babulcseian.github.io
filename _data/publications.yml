@@ -257,6 +257,26 @@ conference:
     figure: ""
     fit: "contain"
 
+  - year: 2023
+    title: "A transfer learning-based computer-aided lung cancer detection system in smart healthcare"
+    authors:
+      - { name: "Rezaul Haque"}
+      - { name: "Shyama Sultana" }
+      - { name: "Al Rafy" }
+      - { name: ""Md Babul Islam", me: "1"" }
+      - { name: "Masum Alam Arafat," }
+      - { name: "Pronaya Bhattacharya" }
+      - { name: "Pushan Kumar Dutta" }
+    journal: "8th IET Smart Cities Symposium (SCS 2024)"
+    paper: "https://ieeexplore.ieee.org/abstract/document/10949445"
+    # code: "https://dl.acm.org/doi/10.5555/3639940.363997"
+    # slides: ""
+    # videos: ""
+    # dataset: ""
+    # slides: ""
+    figure: "/assets/img/paper/conf/lunc cancer.png"
+    fit: "contain"
+
     
     
     
