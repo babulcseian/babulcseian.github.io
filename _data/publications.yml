@@ -34,7 +34,7 @@ journal:
     slides: ""
     videos: ""
     dataset: ""
-    figure: ""
+    figure: "/assets/img/paper/journal/ibtec.jpg"
     fit: "contain"
 
   - year: 2025
@@ -54,7 +54,7 @@ journal:
     slides: ""
     videos: ""
     dataset: ""
-    figure: ""
+    figure: "/assets/img/paper/journal/Omnia Dataset.png"
     fit: "contain"
 
   - year: 2025
