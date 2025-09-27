@@ -295,7 +295,7 @@ conference:
     fit: "contain"
 
 
-    - year: 2024
+- year: 2024
   title: "Hybrid CNN-LSTM Approach for Sentiment Analysis of Bengali Language Comments on Facebook"
   authors:
     - { name: "S. M. Nuruzzaman Nobel" }
