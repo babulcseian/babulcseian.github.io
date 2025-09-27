@@ -9,13 +9,13 @@ journal:
       - { name: "Giancarlo Fortino" }
       - { name: "Declan T. Delaney" }
     journal: "IEEE Sensors Journal (Q1)"
-    doi: ""
-    paper: ""
-    code: ""
+    doi: "https://babulcseian.github.io/soil_sensors_data/"
+    paper: "https://babulcseian.github.io/soil_sensors_data/"
+    code: "https://babulcseian.github.io/soil_sensors_data/"
     slides: ""
-    videos: ""
-    dataset: ""
-    figure: ""
+    # videos: ""
+    dataset: "https://babulcseian.github.io/soil_sensors_data/"
+    figure: "/assets/img/paper/journal/Soil-Monitoring-Station.jpg"
     fit: "contain"
 
   - year: 2025
