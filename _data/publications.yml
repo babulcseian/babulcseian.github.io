@@ -372,6 +372,205 @@ conference:
     figure: ""
     fit: "contain"
 
+- year: 2023
+  title: "Bangladeshi Traffic Sign Recognition and Classification Using CNN with Different Kinds of Transfer Learning Through a New (BTSRB) Dataset"
+  authors:
+    - { name: "Md Abu Sayeed" }
+    - { name: "Md Saiful Islam" }
+    - { name: "Md Babul Islam", me: "1" }
+    - { name: "Piyush Kumar Pareek" }
+    - { name: "Tanbin Islam Rohan" }
+  journal: "Proceedings of the 2023 International Conference on Distributed Computing and Electrical Circuits and Electronics (ICDCECE)"
+  paper: ""
+  code: ""
+  slides: ""
+  videos: ""
+  dataset: ""
+  figure: ""
+  fit: "contain"
+
+- year: 2023
+  title: "Improving Drug Review Categorization Using Sentiment Analysis and Machine Learning"
+  authors:
+    - { name: "Rezaul Haque" }
+    - { name: "Piyush Kumar Pareek" }
+    - { name: "Md Babul Islam", me: "1" }
+    - { name: "Ferdaus Ibne Aziz" }
+    - { name: "Swakshar Das Amarth" }
+    - { name: "Katura Gania Khushbu" }
+  journal: "Proceedings of the 2023 International Conference on Data Science and Network Security (ICDSNS)"
+  paper: ""
+  code: ""
+  slides: ""
+  videos: ""
+  dataset: ""
+  figure: ""
+  fit: "contain"
+
+- year: 2023
+  title: "Deep Learning for Multi-labeled Cyberbully Detection: Enhancing Online Safety"
+  authors:
+    - { name: "Naimul Islam" }
+    - { name: "Rezaul Haque" }
+    - { name: "Piyush Kumar Pareek" }
+    - { name: "Md Babul Islam", me: "1" }
+    - { name: "Imam Hossain Sajeeb" }
+    - { name: "Mahedi Hassan Ratul" }
+  journal: "Proceedings of the 2023 International Conference on Data Science and Network Security (ICDSNS)"
+  paper: ""
+  code: ""
+  slides: ""
+  videos: ""
+  dataset: ""
+  figure: ""
+  fit: "contain"
+
+- year: 2023
+  title: "Diet and Food Restaurant in the COVID-19 Time by Machine Learning Approaches"
+  authors:
+    - { name: "Md Babul Islam", me: "1" }
+    - { name: "Hasibunnahar Swarna" }
+    - { name: "Piyush Kumar Shukla" }
+    - { name: "Prashant Kumar Shukla" }
+    - { name: "Paresh Rawat" }
+  journal: "Computational Intelligence for Modern Business Systems: Emerging Applications and Strategies"
+  paper: ""
+  code: ""
+  slides: ""
+  videos: ""
+  dataset: ""
+  figure: ""
+  fit: "contain"
+
+- year: 2023
+  title: "Deep Learning-based Left Ventricular Ejection Fraction Estimation from Echocardiographic Videos"
+  authors:
+    - { name: "Shafiur Rahman" }
+    - { name: "Rezaul Haque" }
+    - { name: "S. M. Masfequier Rahman Swapno" }
+    - { name: "Md Babul Islam", me: "1" }
+    - { name: "S. M. Nuruzzaman Nobel" }
+  journal: "Proceedings of the 2023 International Conference on Evolutionary Algorithms and Soft Computing Techniques (EASCT)"
+  paper: ""
+  code: ""
+  slides: ""
+  videos: ""
+  dataset: ""
+  figure: ""
+  fit: "contain"
+
+- year: 2023
+  title: "Scientific Article Classification: Harnessing Hybrid Deep Learning Models for Knowledge Discovery"
+  authors:
+    - { name: "Rezaul Haque" }
+    - { name: "B. D. Parameshachari" }
+    - { name: "Md Kamrul Hasan" }
+    - { name: "Ahsanul Hoque Sakib" }
+    - { name: "Awan Ur Rahman" }
+    - { name: "Md Babul Islam", me: "1" }
+  journal: "Proceedings of the 2023 International Conference on Ambient Intelligence, Knowledge Informatics and Industrial Electronics (AIKIIE)"
+  paper: ""
+  code: ""
+  slides: ""
+  videos: ""
+  dataset: ""
+  figure: ""
+  fit: "contain"
+
+- year: 2023
+  title: "Bengali Emotion Classification Using Hybrid Deep Neural Network"
+  authors:
+    - { name: "Rezaul Haque" }
+    - { name: "Md Babul Islam", me: "1" }
+    - { name: "Katura Gania Khushbu" }
+    - { name: "Shafiur Rahman" }
+    - { name: "Awan Ur Rahman" }
+    - { name: "Md Helal Hossen" }
+    - { name: "Tanbin Islam Rohan" }
+  journal: "Proceedings of the 2023 International Conference on Ambient Intelligence, Knowledge Informatics and Industrial Electronics (AIKIIE)"
+  paper: ""
+  code: ""
+  slides: ""
+  videos: ""
+  dataset: ""
+  figure: ""
+  fit: "contain"
+
+- year: 2023
+  title: "An Adaptive Traffic Signal Management System Incorporating Reinforcement Learning"
+  authors:
+    - { name: "S. M. Masfequier Rahman Swapno" }
+    - { name: "Gunjan Chhabra" }
+    - { name: "Keshav Kaushik" }
+    - { name: "S. M. Nuruzzaman Nobel" }
+    - { name: "Md Babul Islam", me: "1" }
+    - { name: "Md Shahiduzzaman" }
+  journal: "Proceedings of the 2023 Annual International Conference on Emerging Research Areas: International Conference on Intelligent Systems (AICERA/ICIS)"
+  paper: ""
+  code: ""
+  slides: ""
+  videos: ""
+  dataset: ""
+  figure: ""
+  fit: "contain"
+
+- year: 2023
+  title: "Alzheimer Disease Classification Using Deep Neural Network"
+  authors:
+    - { name: "Rezaul Haque" }
+    - { name: "Md Babul Islam", me: "1" }
+    - { name: "Gunjan Chhabra" }
+    - { name: "Smita Sharma" }
+    - { name: "Keshav Kaushik" }
+    - { name: "Md Delwar Hosen" }
+    - { name: "Riyadot Hossain Dip" }
+  journal: "Proceedings of the 2023 10th IEEE Uttar Pradesh Section International Conference on Electrical, Electronics and Computer Engineering (UPCON)"
+  paper: ""
+  code: ""
+  slides: ""
+  videos: ""
+  dataset: ""
+  figure: ""
+  fit: "contain"
+
+- year: 2023
+  title: "Comparative Analysis of Epileptic Seizure Prediction: Exploring Diverse Pre-processing Techniques and Machine Learning Models"
+  authors:
+    - { name: "Md Simul Hasan Talukder" }
+    - { name: "Rejwan Bin Sulaiman" }
+    - { name: "Gunjan Chhabra" }
+    - { name: "Suman Avdhesh Yadav" }
+    - { name: "Rezaul Haque" }
+    - { name: "Md Babul Islam", me: "1" }
+    - { name: "Keshav Kaushik" }
+  journal: "Proceedings of the 2023 10th IEEE Uttar Pradesh Section International Conference on Electrical, Electronics and Computer Engineering (UPCON)"
+  paper: ""
+  code: ""
+  slides: ""
+  videos: ""
+  dataset: ""
+  figure: ""
+  fit: "contain"
+
+- year: 2023
+  title: "Deep Learning Based Tuberculosis and Pneumonia Disease Detection Using CNN"
+  authors:
+    - { name: "Basitur Rahman Bappi" }
+    - { name: "S. M. Masfequier Rahman Swapno" }
+    - { name: "Gunjan Chhabra" }
+    - { name: "Keshav Kaushik" }
+    - { name: "S. M. Nuruzzaman Nobel" }
+    - { name: "Md Babul Islam", me: "1" }
+  journal: "Proceedings of the 2023 Seventh International Conference on Image Information Processing (ICIIP)"
+  paper: ""
+  code: ""
+  slides: ""
+  videos: ""
+  dataset: ""
+  figure: ""
+  fit: "contain"
+
+
 thesis:
   - title: "A 5G Network Based on Virtual Network System Focused on Equal Bandwidth"
     description: "Masters thesis, Md Babul Islam, June 2022, Huzhou University."
