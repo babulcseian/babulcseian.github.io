@@ -374,7 +374,7 @@ conference:
     # slides: ""
     # videos: ""
     dataset: "https://ieeexplore.ieee.org/document/10151254"
-    figure: "/assets/img/paper/conf/BTSRB.jpg"
+    figure: "/assets/img/paper//journal/BTSRB.jpg"
     fit: "contain"
 
   - year: 2023
@@ -392,7 +392,7 @@ conference:
     # slides: ""
     # videos: ""
     dataset: "https://ieeexplore.ieee.org/document/10245841"
-    figure: "/assets/img/paper/conf/drug cata.jpg"
+    figure: "/assets/img/paper/journal/drug cata.jpg"
     fit: "contain"
 
   - year: 2023
@@ -410,7 +410,7 @@ conference:
     slides: ""
     videos: ""
     dataset: "https://ieeexplore.ieee.org/document/10245135"
-    figure: "/assets/img/paper/conf/cyberbully.jpg"
+    figure: "/assets/img/paper/journal/cyberbully.jpg"
     fit: "contain"
 
   - year: 2023
@@ -427,7 +427,7 @@ conference:
     slides: ""
     videos: ""
     dataset: ""
-    figure: "/assets/img/paper/conf/diet .jpg"
+    figure: "/assets/img/paper/journal/diet .jpg"
     fit: "contain"
 
   - year: 2023
