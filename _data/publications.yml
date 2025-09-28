@@ -369,12 +369,12 @@ conference:
       - { name: "Piyush Kumar Pareek" }
       - { name: "Tanbin Islam Rohan" }
     journal: "Proceedings of the 2023 International Conference on Distributed Computing and Electrical Circuits and Electronics (ICDCECE)"
-    paper: ""
-    code: ""
-    slides: ""
-    videos: ""
-    dataset: ""
-    figure: ""
+    paper: "https://ieeexplore.ieee.org/document/10151254"
+    code: "https://ieeexplore.ieee.org/document/10151254"
+    # slides: ""
+    # videos: ""
+    dataset: "https://ieeexplore.ieee.org/document/10151254"
+    figure: "/assets/img/paper/conf/BTSRB.jpg"
     fit: "contain"
 
   - year: 2023
@@ -387,12 +387,12 @@ conference:
       - { name: "Swakshar Das Amarth" }
       - { name: "Katura Gania Khushbu" }
     journal: "Proceedings of the 2023 International Conference on Data Science and Network Security (ICDSNS)"
-    paper: ""
-    code: ""
-    slides: ""
-    videos: ""
-    dataset: ""
-    figure: ""
+    paper: "https://ieeexplore.ieee.org/document/10245841"
+    code: "https://ieeexplore.ieee.org/document/10245841"
+    # slides: ""
+    # videos: ""
+    dataset: "https://ieeexplore.ieee.org/document/10245841"
+    figure: "/assets/img/paper/conf/drug cata.jpg"
     fit: "contain"
 
   - year: 2023
@@ -405,12 +405,12 @@ conference:
       - { name: "Imam Hossain Sajeeb" }
       - { name: "Mahedi Hassan Ratul" }
     journal: "Proceedings of the 2023 International Conference on Data Science and Network Security (ICDSNS)"
-    paper: ""
-    code: ""
+    paper: "https://ieeexplore.ieee.org/document/10245135"
+    code: "https://ieeexplore.ieee.org/document/10245135"
     slides: ""
     videos: ""
-    dataset: ""
-    figure: ""
+    dataset: "https://ieeexplore.ieee.org/document/10245135"
+    figure: "/assets/img/paper/conf/cyberbully.jpg"
     fit: "contain"
 
   - year: 2023
@@ -422,12 +422,12 @@ conference:
       - { name: "Prashant Kumar Shukla" }
       - { name: "Paresh Rawat" }
     journal: "Computational Intelligence for Modern Business Systems: Emerging Applications and Strategies"
-    paper: ""
-    code: ""
+    paper: "https://link.springer.com/chapter/10.1007/978-981-99-5354-7_22"
+    code: "https://link.springer.com/chapter/10.1007/978-981-99-5354-7_22"
     slides: ""
     videos: ""
     dataset: ""
-    figure: ""
+    figure: "/assets/img/paper/conf/diet .jpg"
     fit: "contain"
 
   - year: 2023
