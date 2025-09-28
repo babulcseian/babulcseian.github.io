@@ -72,11 +72,10 @@ journal:
     slides: ""
     videos: ""
     dataset: ""
-    figure: "/assets/img/paper/journal/prisma.jpg"
+    figure: "/assets/img/paper/journal/prisma .jpg"
     fit: "contain"
 
   - year: 2025
-    status: "Draft"
     title: "Lightweight AI in IoT Applications: A Review of TinyML, TinyDL, and Emerging TinyLLMs"
     authors:
       - { name: "Md Babul Islam", me: "1" }
