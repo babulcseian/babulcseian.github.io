@@ -191,7 +191,7 @@ conference:
     slides: ""
     videos: ""
     dataset: ""
-    figure: ""
+    figure: "/assets/img/paper/conf/Accepted.jpg"
     fit: "contain"
 
   - year: 2025
