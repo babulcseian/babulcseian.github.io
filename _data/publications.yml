@@ -296,12 +296,12 @@ conference:
       - { name: "Md Babul Islam", me: "1" }
       - { name: "Rezaul Haque" }
     journal: "Proceedings of the 2024 International Conference on Integrated Circuits and Communication Systems (ICICACS)"
-    paper: ""
-    code: ""
+    paper: "https://ieeexplore.ieee.org/document/10498636"
+    code: "https://ieeexplore.ieee.org/document/10498636"
     slides: ""
     videos: ""
     dataset: ""
-    figure: ""
+    figure: "/assets/img/paper/conf/lstm cnn.jpg"
     fit: "contain"
 
   - year: 2024
@@ -315,12 +315,12 @@ conference:
       - { name: "Md Babul Islam", me: "1" }
       - { name: "Rezaul Haque" }
     journal: "Proceedings of the 2024 International Conference on Intelligent Systems for Cybersecurity (ISCS)"
-    paper: ""
-    code: ""
-    slides: ""
-    videos: ""
-    dataset: ""
-    figure: ""
+    paper: "https://ieeexplore.ieee.org/document/10581265"
+    code: "https://ieeexplore.ieee.org/document/10581265"
+    # slides: ""
+    # videos: ""
+    # dataset: ""
+    figure: "/assets/img/paper/conf/Smart Manhole.jpg"
     fit: "contain"
 
   - year: 2024
@@ -334,12 +334,12 @@ conference:
       - { name: "V. P. Meena" }
       - { name: "Francesco Benedetto" }
     journal: "Proceedings of the 47th International Conference on Telecommunications and Signal Processing (TSP 2024)"
-    paper: ""
+    paper: "https://ieeexplore.ieee.org/document/10605928"
     code: ""
-    slides: ""
-    videos: ""
-    dataset: ""
-    figure: ""
+    # slides: ""
+    # videos: ""
+    # dataset: ""
+    figure: "/assets/img/paper/conf/11.jpg"
     fit: "contain"
 
   - year: 2024
