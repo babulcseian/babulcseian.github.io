@@ -665,9 +665,9 @@ conference:
     fit: "contain"
 
 thesis:
-  - title: "A 5G Network Based on Virtual Network System Focused on Equal Bandwidth"
-    description: "Masters thesis, Md Babul Islam, June 2022, Huzhou University."
-    year: 2022
-    paper: "https://your-site.com/thesis.pdf"
-    figure: "/assets/img/papers/thesis-thumb.jpg"
+  - title: "AI Driven Predictive Approaches in Smart Environment: From Smart Buildings🏢 to Smart Agriculture"
+    description: "PhD thesis (Submitted), October 2025, University of Calabria."
+    year: 2025
+    paper: ""
+    figure: "/assets/img/paper/conf/PhD thesis.jpg"
     fit: "contain"
