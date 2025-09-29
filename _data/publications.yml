@@ -374,7 +374,7 @@ conference:
     # slides: ""
     # videos: ""
     dataset: "https://ieeexplore.ieee.org/document/10151254"
-    figure: "/assets/img/paper//journal/BTSRB.jpg"
+    figure: "/assets/img/paper/journal/BTSRB.jpg"
     fit: "contain"
 
   - year: 2023
@@ -439,12 +439,12 @@ conference:
       - { name: "Md Babul Islam", me: "1" }
       - { name: "S. M. Nuruzzaman Nobel" }
     journal: "Proceedings of the 2023 International Conference on Evolutionary Algorithms and Soft Computing Techniques (EASCT)"
-    paper: ""
-    code: ""
+    paper: "https://ieeexplore.ieee.org/document/10392607"
+    code: "https://ieeexplore.ieee.org/document/10392607"
     slides: ""
     videos: ""
-    dataset: ""
-    figure: ""
+    dataset: "https://ieeexplore.ieee.org/document/10392607"
+    figure: "/assets/img/paper/conf/DL.jpg"
     fit: "contain"
 
   - year: 2023
@@ -457,12 +457,12 @@ conference:
       - { name: "Awan Ur Rahman" }
       - { name: "Md Babul Islam", me: "1" }
     journal: "Proceedings of the 2023 International Conference on Ambient Intelligence, Knowledge Informatics and Industrial Electronics (AIKIIE)"
-    paper: ""
-    code: ""
+    paper: "https://ieeexplore.ieee.org/document/10389945"
+    code: "https://ieeexplore.ieee.org/document/10389945"
     slides: ""
     videos: ""
-    dataset: ""
-    figure: ""
+    dataset: "https://ieeexplore.ieee.org/document/10389945"
+    figure: "/assets/img/paper/conf/image.png"
     fit: "contain"
 
   - year: 2023
@@ -476,12 +476,12 @@ conference:
       - { name: "Md Helal Hossen" }
       - { name: "Tanbin Islam Rohan" }
     journal: "Proceedings of the 2023 International Conference on Ambient Intelligence, Knowledge Informatics and Industrial Electronics (AIKIIE)"
-    paper: ""
-    code: ""
+    paper: "https://ieeexplore.ieee.org/document/10389834"
+    code: "https://ieeexplore.ieee.org/document/10389834"
     slides: ""
     videos: ""
-    dataset: ""
-    figure: ""
+    dataset: "https://ieeexplore.ieee.org/document/10389834"
+    figure: "/assets/img/paper/conf/bengali emotion.jpg"
     fit: "contain"
 
   - year: 2023
