@@ -621,12 +621,12 @@ conference:
       - { name: "Abdullah M. M. A. Al Omari" }
       - { name: "Hasibunnahar Swarna" }
     journal: "Proceedings of the Second International Conference on Cloud Computing and Mechatronic Engineering (I3CME 2022)"
-    paper: ""
-    code: ""
+    paper: "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12339/1233927/Detect-deception-on-banking-credit-card-payment-system-by-machine/10.1117/12.2655113.short"
+    code: "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12339/1233927/Detect-deception-on-banking-credit-card-payment-system-by-machine/10.1117/12.2655113.short"
     slides: ""
     videos: ""
-    dataset: ""
-    figure: ""
+    dataset: "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12339/1233927/Detect-deception-on-banking-credit-card-payment-system-by-machine/10.1117/12.2655113.short"
+    figure: "/assets/img/paper/conf/credit.jpg"
     fit: "contain"
 
   - year: 2022
@@ -638,12 +638,12 @@ conference:
       - { name: "Jungang Lou" }
       - { name: "Piyush Kumar Shukla" }
     journal: "Proceedings of the 2022 Fifth International Conference on Computational Intelligence and Communication Technologies (CCICT)"
-    paper: ""
-    code: ""
+    paper: "https://ieeexplore.ieee.org/document/9913578"
+    code: "https://ieeexplore.ieee.org/document/9913578"
     slides: ""
     videos: ""
-    dataset: ""
-    figure: ""
+    dataset: "https://ieeexplore.ieee.org/document/9913578"
+    figure: "/assets/img/paper/conf/blockchain.jpg"
     fit: "contain"
 
   - year: 2022
@@ -656,12 +656,12 @@ conference:
       - { name: "Paresh Rawat" }
       - { name: "Jyoti Dange" }
     journal: "Proceedings of the Third Doctoral Symposium on Computational Intelligence (DoSCI 2022)"
-    paper: ""
-    code: ""
+    paper: "https://link.springer.com/chapter/10.1007/978-981-19-3148-2_4"
+    code: "https://link.springer.com/chapter/10.1007/978-981-19-3148-2_4"
     slides: ""
     videos: ""
-    dataset: ""
-    figure: ""
+    dataset: "https://link.springer.com/chapter/10.1007/978-981-19-3148-2_4"
+    figure: "/assets/img/paper/conf/twitter.jpg"
     fit: "contain"
 
 thesis:
