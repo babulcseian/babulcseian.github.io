@@ -462,7 +462,7 @@ conference:
     slides: ""
     videos: ""
     dataset: "https://ieeexplore.ieee.org/document/10389945"
-    figure: "/assets/img/paper/conf/image.png"
+    figure: "/assets/img/paper/conf/hariseness.jpg"
     fit: "contain"
 
   - year: 2023
@@ -494,12 +494,12 @@ conference:
       - { name: "Md Babul Islam", me: "1" }
       - { name: "Md Shahiduzzaman" }
     journal: "Proceedings of the 2023 Annual International Conference on Emerging Research Areas: International Conference on Intelligent Systems (AICERA/ICIS)"
-    paper: ""
-    code: ""
+    paper: "https://ieeexplore.ieee.org/document/10420185"
+    code: "https://ieeexplore.ieee.org/document/10420185"
     slides: ""
     videos: ""
-    dataset: ""
-    figure: ""
+    dataset: "https://ieeexplore.ieee.org/document/10420185"
+    figure: "/assets/img/paper/conf/RL.jpg"
     fit: "contain"
 
   - year: 2023
@@ -513,12 +513,12 @@ conference:
       - { name: "Md Delwar Hosen" }
       - { name: "Riyadot Hossain Dip" }
     journal: "Proceedings of the 2023 10th IEEE Uttar Pradesh Section International Conference on Electrical, Electronics and Computer Engineering (UPCON)"
-    paper: ""
-    code: ""
+    paper: "https://ieeexplore.ieee.org/document/10434852"
+    code: "https://ieeexplore.ieee.org/document/10434852"
     slides: ""
     videos: ""
-    dataset: ""
-    figure: ""
+    dataset: "https://ieeexplore.ieee.org/document/10434852"
+    figure: "/assets/img/paper/conf/alzimer.jpg"
     fit: "contain"
 
   - year: 2023
@@ -532,12 +532,12 @@ conference:
       - { name: "Md Babul Islam", me: "1" }
       - { name: "Keshav Kaushik" }
     journal: "Proceedings of the 2023 10th IEEE Uttar Pradesh Section International Conference on Electrical, Electronics and Computer Engineering (UPCON)"
-    paper: ""
-    code: ""
+    paper: "https://ieeexplore.ieee.org/document/10434289"
+    code: "https://ieeexplore.ieee.org/document/10434289"
     slides: ""
     videos: ""
-    dataset: ""
-    figure: ""
+    dataset: "https://ieeexplore.ieee.org/document/10434289"
+    figure: "/assets/img/paper/conf/eli.jpg"
     fit: "contain"
 
   - year: 2023
@@ -550,12 +550,12 @@ conference:
       - { name: "S. M. Nuruzzaman Nobel" }
       - { name: "Md Babul Islam", me: "1" }
     journal: "Proceedings of the 2023 Seventh International Conference on Image Information Processing (ICIIP)"
-    paper: ""
-    code: ""
-    slides: ""
-    videos: ""
-    dataset: ""
-    figure: ""
+    paper: "https://ieeexplore.ieee.org/document/10537686"
+    code: "https://ieeexplore.ieee.org/document/10537686"
+    # slides: ""
+    # videos: ""
+    dataset: "https://ieeexplore.ieee.org/document/10537686"
+    figure: "/assets/img/paper/conf/pnu.jpg"
     fit: "contain"
 
   - year: 2023
@@ -574,7 +574,7 @@ conference:
     slides: ""
     videos: ""
     dataset: ""
-    figure: ""
+    figure: "/assets/img/paper/conf/RL.jpg"
     fit: "contain"
 
   - year: 2023
@@ -588,12 +588,12 @@ conference:
       - { name: "Ayesha Siddiqua" }
       - { name: "Mohammad Mominur Rahman" }
     journal: "Integrated Circuits and Communication Systems (ICICACS)"
-    paper: "https://ieeexplore.ieee.org/abstract/document/10498187"
-    code: ""
+    paper: "https://ieeexplore.ieee.org/document/10498187"
+    code: "https://ieeexplore.ieee.org/document/10498187"
     slides: ""
     videos: ""
-    dataset: ""
-    figure: ""
+    dataset: "https://ieeexplore.ieee.org/document/10498187"
+    figure: "/assets/img/paper/conf/classroom.jpg"
     fit: "contain"
 
   - year: 2022
@@ -604,12 +604,12 @@ conference:
       - { name: "Piyush Kumar Shukla" }
       - { name: "Prashant Kumar Shukla" }
     journal: "Proceedings of the 2022 7th International Conference on Communication and Electronics Systems (ICCES)"
-    paper: ""
-    code: ""
+    paper: "https://ieeexplore.ieee.org/document/9835811"
+    code: "https://ieeexplore.ieee.org/document/9835811"
     slides: ""
     videos: ""
-    dataset: ""
-    figure: ""
+    dataset: "https://ieeexplore.ieee.org/document/9835811"
+    figure: "/assets/img/paper/conf/fraud.jpg"
     fit: "contain"
 
   - year: 2022
