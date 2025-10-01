@@ -204,11 +204,11 @@ conference:
       - { name: "Claudio Savaglio" }
       - { name: "Andrea Vinci" }
     journal: "IEEE International Conference on Human-Machine Systems (2025 Dubai)"
-    paper: ""
-    code: ""
-    slides: ""
-    videos: ""
-    dataset: ""
+    paper: "https://ieeexplore.ieee.org/abstract/document/11154169"
+    code: "https://ieeexplore.ieee.org/abstract/document/11154169"
+    slides: "https://ieeexplore.ieee.org/abstract/document/11154169"
+    # videos: ""
+    # dataset: ""
     figure: "/assets/img/paper/conf/edge cloud.jpg"
     fit: "contain"
 
