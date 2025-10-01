@@ -76,10 +76,10 @@ journal:
     fit: "contain"
 
   - year: 2025
-    title: "Lightweight AI in IoT Applications: A Review of TinyML, TinyDL, and Emerging TinyLLMs"
+    title: "Lightweight AI in IoT Applications: A Review of TinyML, TinyDL, and Emerging TinyLLMs (Will Submit Soon)"
     authors:
       - { name: "Md Babul Islam", me: "1" }
-      - { name: "Antonio Guerrieri" }
+      - { name: "Antonio Guerrieri and others" }
     journal: "ACM Computing Surveys (Q1)"
     doi: ""
     paper: ""
