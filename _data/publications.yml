@@ -58,7 +58,7 @@ journal:
     fit: "contain"
 
   - year: 2025
-    title: "From Traditional Machine Learning to Fine-Tuning Large Language Models: A Review for Sensors-Based Soil Moisture Forecasting (Under Review)"
+    title: "From Traditional Machine Learning to Fine-Tuning Large Language Models: A Review for Sensors-Based Soil Moisture Forecasting"
     authors:
       - { name: "Md Babul Islam", me: "1" }
       - { name: "Antonio Guerrieri" }
@@ -66,12 +66,12 @@ journal:
       - { name: "Declan T. Delaney" }
       - { name: "Giancarlo Fortino" }
     journal: "MDPI Sensors"
-    doi: ""
-    paper: ""
-    code: ""
-    slides: ""
-    videos: ""
-    dataset: ""
+    doi: " https://doi.org/10.3390/s25226903"
+    paper: " https://doi.org/10.3390/s25226903"
+    # code: ""
+    # slides: ""
+    # videos: ""
+    # dataset: ""
     figure: "/assets/img/paper/journal/prisma .jpg"
     fit: "contain"
 
