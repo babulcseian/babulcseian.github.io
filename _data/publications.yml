@@ -17,9 +17,23 @@ journal:
     dataset: "https://babulcseian.github.io/soil_sensors_data/"
     figure: "/assets/img/paper/journal/Soil-Monitoring-Station.jpg"
     fit: "contain"
+  - year: 2025
+    title: "Lightweight AI in IoT Applications: A Review of TinyML, TinyDL, and Emerging TinyLLMs (Under Review)"
+    authors:
+      - { name: "Md Babul Islam", me: "1" }
+      - { name: "Antonio Guerrieri and others" }
+    journal: "ACM Computing Surveys (Q1)"
+    doi: ""
+    paper: ""
+    code: ""
+    slides: ""
+    videos: ""
+    dataset: ""
+    figure: "/assets/img/paper/journal/TinyLLM.jpg"
+    fit: "contain"
 
   - year: 2025
-    title: "iBTEC: A Tiny Deep Learning Approach for Temperature and Occupancy Prediction in Smart Buildings (Under Review)"
+    title: "iBTEC: A Tiny Deep Learning Approach for Temperature and Occupancy Prediction in Smart Buildings (Under Major Review)"
     authors:
       - { name: "Md Babul Islam", me: "1" }
       - { name: "Qimeng Li" }
@@ -38,7 +52,7 @@ journal:
     fit: "contain"
 
   - year: 2025
-    title: "ATM-SB: An Indoor Temperature Prediction Approach for Smart Buildings Based on Deep Learning (Under Review)"
+    title: "ATM-SB: An Indoor Temperature Prediction Approach for Smart Buildings Based on Deep Learning (Under Minor Review)"
     authors:
       - { name: "Md Babul Islam", me: "1" }
       - { name: "Antonio Guerrieri" }
@@ -75,20 +89,7 @@ journal:
     figure: "/assets/img/paper/journal/prisma .jpg"
     fit: "contain"
 
-  - year: 2025
-    title: "Lightweight AI in IoT Applications: A Review of TinyML, TinyDL, and Emerging TinyLLMs (Will Submit Soon)"
-    authors:
-      - { name: "Md Babul Islam", me: "1" }
-      - { name: "Antonio Guerrieri and others" }
-    journal: "ACM Computing Surveys (Q1)"
-    doi: ""
-    paper: ""
-    code: ""
-    slides: ""
-    videos: ""
-    dataset: ""
-    figure: "/assets/img/paper/journal/TinyLLM.jpg"
-    fit: "contain"
+  
     
   - year: 2025
     title: "ViT-SENet-Tom: machine learning based novel hybrid squeeze excitation network and vision transformer framework for tomato fruits classification"
