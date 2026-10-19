@@ -106,6 +106,25 @@ missing `href=` or an unclosed tag can no longer happen.
 
 ---
 
+## Adding a research project (Home page)
+
+Open `_data/projects.csv` the same way and add ONE row:
+
+   | column       | what to put                                                     |
+   |--------------|-----------------------------------------------------------------|
+   | title        | project title                                                   |
+   | place        | company, institute or country                                   |
+   | period       | e.g. `June 2023 to Present`                                     |
+   | status       | `Ongoing` (blue badge) or `Completed`                           |
+   | description  | one or two plain sentences                                      |
+   | link1_text / link1_url | first button label and full `https://` link (optional) |
+   | link2_text / link2_url | second button (optional)                              |
+   | link3_text / link3_url | third button (optional)                               |
+
+Cards appear in the same order as the rows. Leave unused cells empty.
+
+---
+
 ## Why this is safer than before
 
 The old files were in YAML format, which uses `{ }` braces and `"quotes"`
