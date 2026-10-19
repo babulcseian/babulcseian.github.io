@@ -1,0 +1,85 @@
+<!--
+  RESEARCH PROJECTS (shown on the Home page)
+  ==========================================
+  Reads from _data/projects.csv. To add a project: open that file in Excel or
+  Google Sheets, add ONE new row, fill in the columns, save as CSV, upload it
+  back to the same path. Cards appear in the same order as the rows.
+
+    title         project title
+    place         company / institute / country
+    period        free text, e.g. "June 2023 to Present"
+    status        Ongoing or Completed (exact spelling; Ongoing shows a blue badge)
+    description   one or two plain sentences
+    link1_text    button label (optional), e.g. "Omnia Energia"
+    link1_url     full web address starting with https:// (optional)
+    link2_*       second button (optional)
+    link3_*       third button (optional)
+
+  Leave any optional cell empty. Extra spaces are trimmed automatically.
+-->
+<style>
+.rp-section{margin:2rem 0}
+.rp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.rp-card{position:relative;display:flex;flex-direction:column;gap:.35rem;
+  padding:1rem 1.1rem 1rem 1.35rem;border-radius:16px;background:#fff;
+  border:1px solid #e9eef3;box-shadow:0 6px 22px rgba(16,24,40,.05);overflow:hidden;
+  transition:transform .18s,box-shadow .18s,border-color .18s}
+.rp-card:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(16,24,40,.09);
+  border-color:#aed6f1}
+.rp-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;
+  background:linear-gradient(180deg,#2980b9,#3498db,#aed6f1)}
+.rp-head{display:flex;align-items:flex-start;justify-content:space-between;gap:.6rem}
+.rp-title{font-size:1rem;font-weight:800;line-height:1.35;color:#2c3e50;margin:0}
+.rp-status{flex-shrink:0;display:inline-flex;align-items:center;gap:.3rem;
+  padding:.18rem .55rem;border-radius:999px;font-size:.7rem;font-weight:800;
+  background:#f1f5f9;border:1px solid #e2e8f0;color:#5d7a94}
+.rp-status.ongoing{background:#eaf6fd;border-color:#aed6f1;color:#21618c}
+.rp-status.ongoing::before{content:"";width:7px;height:7px;border-radius:50%;background:#2980b9}
+.rp-meta{font-size:.8rem;color:#5d7a94;line-height:1.45}
+.rp-meta b{color:#21618c;font-weight:700}
+.rp-desc{font-size:.88rem;color:#4b5563;line-height:1.55;margin:.1rem 0 .2rem}
+.rp-links{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:auto;padding-top:.35rem}
+.rp-link{display:inline-flex;align-items:center;gap:.25rem;padding:.3rem .62rem;
+  border-radius:999px;font-weight:700;font-size:.78rem;text-decoration:none;
+  background:#eaf6fd;border:1px solid #aed6f1;color:#21618c;
+  transition:transform .12s,box-shadow .12s}
+.rp-link:hover{transform:translateY(-1px);box-shadow:0 5px 10px rgba(0,0,0,.07);
+  background:#d6eaf8;color:#21618c}
+@media(max-width:680px){
+  .rp-grid{grid-template-columns:1fr}
+  .rp-head{flex-direction:column;gap:.35rem}
+}
+</style>
+
+<div class="rp-section">
+  <h3 class="fw-bold border-bottom pb-3 mb-4">Research Projects</h3>
+  <div class="rp-grid">
+    {% for p in site.data.projects %}
+      {% assign p_title = p.title | strip %}
+      {% if p_title != "" %}
+      {% assign p_status = p.status | strip %}
+      {% assign p_place = p.place | strip %}
+      {% assign p_period = p.period | strip %}
+      {% assign p_desc = p.description | strip %}
+      <article class="rp-card">
+        <div class="rp-head">
+          <h4 class="rp-title">{{ p_title }}</h4>
+          {% if p_status != "" %}<span class="rp-status{% if p_status == 'Ongoing' %} ongoing{% endif %}">{{ p_status }}</span>{% endif %}
+        </div>
+        {% if p_place != "" or p_period != "" %}
+        <div class="rp-meta">{% if p_place != "" %}<b>{{ p_place }}</b>{% endif %}{% if p_place != "" and p_period != "" %} &middot; {% endif %}{{ p_period }}</div>
+        {% endif %}
+        {% if p_desc != "" %}<p class="rp-desc">{{ p_desc }}</p>{% endif %}
+        {% assign l1u = p.link1_url | strip %}{% assign l2u = p.link2_url | strip %}{% assign l3u = p.link3_url | strip %}
+        {% if l1u != "" or l2u != "" or l3u != "" %}
+        <div class="rp-links">
+          {% if l1u != "" %}{% assign l1t = p.link1_text | strip %}<a class="rp-link" href="{{ l1u }}" target="_blank" rel="noopener">{% if l1t != "" %}{{ l1t }}{% else %}Link{% endif %} &#8599;</a>{% endif %}
+          {% if l2u != "" %}{% assign l2t = p.link2_text | strip %}<a class="rp-link" href="{{ l2u }}" target="_blank" rel="noopener">{% if l2t != "" %}{{ l2t }}{% else %}Link{% endif %} &#8599;</a>{% endif %}
+          {% if l3u != "" %}{% assign l3t = p.link3_text | strip %}<a class="rp-link" href="{{ l3u }}" target="_blank" rel="noopener">{% if l3t != "" %}{{ l3t }}{% else %}Link{% endif %} &#8599;</a>{% endif %}
+        </div>
+        {% endif %}
+      </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
